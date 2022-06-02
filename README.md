@@ -4,7 +4,7 @@
 
 <img align="right" width="35%" height="auto" src="vignettes/logo_Cerebro.png">
 
-:warning: __Discontinuation notice:__ Sadly, [Cerebro](https://github.com/romanhaa/Cerebro) and [cerebroApp](https://github.com/romanhaa/cerebroApp) are no longer in active development. See [here](./DISCONTINUATION_NOTICE.md) for more info.
+:warning: This is a fork of the excellent [cerebroApp](https://github.com/romanhaa/cerebroApp) R package from [Roman Hillje](https://github.com/romanhaa), which was sadly discontinued.
 
 # cerebroApp
 
