@@ -1,7 +1,17 @@
+## define users that can access Cerebro --------------------------------------##
+user_credentials <- tibble::tribble(
+   ~user,              ~password,       ~start, ~expire, ~admin,
+  "aie", "scRNAseq!", "2020-08-01",      NA,  FALSE,
+)
+
 ##----------------------------------------------------------------------------##
 ## Server function for Cerebro.
 ##----------------------------------------------------------------------------##
 server <- function(input, output, session) {
+
+res_auth <- shinymanager::secure_server(
+  check_credentials = shinymanager::check_credentials(user_credentials)
+)
 
   ##--------------------------------------------------------------------------##
   ## Load color setup, plotting and utility functions.
@@ -109,44 +119,29 @@ server <- function(input, output, session) {
       print(glue::glue("[{Sys.time()}] Load data set from file: {dataset_to_load}"))
       ## read the file
       data <- readRDS(dataset_to_load)
-      if (
+      if(
         exists('Cerebro.options') &&
-        !is.null(Cerebro.options[['expression_matrix_h5']])
+        !is.null(Cerebro.options[['expression_matrix_h5']]) &&
+        file.exists(Cerebro.options[['expression_matrix_h5']])
       ) {
-        if (!file.exists(Cerebro.options[['expression_matrix_h5']])) {
+        print(glue::glue("[{Sys.time()}] Loading expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
+        expression_matrix <- t(HDF5Array::TENxMatrix(Cerebro.options[['expression_matrix_h5']], group='expression'))
+        if (nrow(data$meta_data)!=ncol(expression_matrix)) {
           shinyWidgets::sendSweetAlert(
             session = session,
             title = "Error!",
             text = HTML(glue::glue(
-              "Specified expression matrix in h5 format could not be found at:",
-              "<br><br>",
-              "{Cerebro.options[['expression_matrix_h5']]}",
-              "<br><br>",
-              "Please check the path."
+              "The number of cells in the meta data ",
+              "({format(nrow(data$meta_data), big.mark=',')}) does not match ",
+              "the number of cells in the provided expression matrix ",
+              "({format(ncol(expression_matrix), big.mark=',')}).<br><br>",
+              "Until fixed, the 'Gene (set) expression' tab will not work."
             )),
             type = "error",
             html = TRUE
           )
         } else {
-          print(glue::glue("[{Sys.time()}] Loading expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
-          expression_matrix <- Matrix::t(HDF5Array::TENxMatrix(Cerebro.options[['expression_matrix_h5']], group='expression'))
-          if (nrow(data$meta_data)!=ncol(expression_matrix)) {
-            shinyWidgets::sendSweetAlert(
-              session = session,
-              title = "Error!",
-              text = HTML(glue::glue(
-                "The number of cells in the meta data ",
-                "({format(nrow(data$meta_data), big.mark=',')}) does not match ",
-                "the number of cells in the provided expression matrix ",
-                "({format(ncol(expression_matrix), big.mark=',')}).<br><br>",
-                "Until fixed, the 'Gene (set) expression' tab will not work."
-              )),
-              type = "error",
-              html = TRUE
-            )
-          } else {
-            data$expression <- expression_matrix
-          }
+          data$expression <- expression_matrix
         }
       }
     }
@@ -298,14 +293,9 @@ server <- function(input, output, session) {
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/load_data/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/overview/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/groups/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/most_expressed_genes/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/marker_genes/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/enriched_pathways/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/gene_expression/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/trajectory/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/extra_material/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/gene_id_conversion/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/analysis_info/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/color_management/server.R"), local = TRUE)
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/about/server.R"), local = TRUE)
 }
