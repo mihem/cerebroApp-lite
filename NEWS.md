@@ -1,3 +1,15 @@
+# cerebroApp 1.4.0
+This is the first update of this cerebroApp fork. Its aim is to continue a lightweight version of the excellent cerebroApp with only the main function as the cerebroApp by Roman Hillje is sadly discontinued.
+
+## Major changes
+- remove enriched pathways, extra material, most expressed genes and trajectory functions since the goal of this fork is to continue with a lightweight version
+
+## Minor changes
+- `Load Data` is renamed to `Data info` and `Overview` to `Main`
+- Preferences about WebGL and hover info are now show in the first tab called `Data info`
+- more colorful boxes for the sample information
+- different icons for tabs `Data info`, `Main`, `Groups` and `Marker Groups`
+
 # cerebroApp 1.3.1
 
 Despite the minor version bump, this update contains substantial performance improvements in the Shiny app, specifically in the projections.
