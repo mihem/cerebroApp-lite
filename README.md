@@ -5,6 +5,11 @@
 <img align="right" width="35%" height="auto" src="vignettes/logo_Cerebro.png">
 
 :warning: This is a fork of the excellent [cerebroApp](https://github.com/romanhaa/cerebroApp) R package from [Roman Hillje](https://github.com/romanhaa), which was sadly discontinued.
+The fork can be installed with:
+
+```r
+devtools::install_github('mihem/cerebroApp')
+```
 
 # cerebroApp
 
@@ -12,11 +17,6 @@ R package upon which the [Cerebro](https://github.com/romanhaa/Cerebro) is built
 Contains helper function that prepare single-cell RNA-seq data stored in a Seurat object for visualization in Cerebro.
 Seurat v3 and `SCE`/`SingleCellExperiment` objects are supported.
 
-Make sure to install the package using `BiocManager::install()` because `devtools::install_github()` will otherwise pull old versions of dependencies that can result in errors.
-
-```r
-BiocManager::install('romanhaa/cerebroApp')
-```
 
 For further details, please refer to the official [cerebroApp](https://romanhaa.github.io/cerebroApp/) website.
 
