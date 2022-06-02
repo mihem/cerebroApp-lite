@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)]
+![Lifecycle: stable](https://lifecycle.r-lib.org/articles/figures/lifecycle-stable.svg)
 
 <img align="right" width="35%" height="auto" src="vignettes/logo_Cerebro.png">
 
