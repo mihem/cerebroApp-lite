@@ -14,12 +14,7 @@ devtools::install_github('mihem/cerebroApp')
 
 R package upon which the [Cerebro](https://github.com/romanhaa/Cerebro) is built.
 Contains helper function that prepare single-cell RNA-seq data stored in a Seurat object for visualization in Cerebro.
-Seurat v3 and `SCE`/`SingleCellExperiment` objects are supported.
+Seurat v3 and v4 and `SCE`/`SingleCellExperiment` objects are supported.
 
 
 For further details, please refer to the official [cerebroApp](https://romanhaa.github.io/cerebroApp/) website.
-
-## Credit
-
-* Pathway enrichment in marker gene lists (`getEnrichedPathways()`) is done through the enrichR API (<https://github.com/wjawaid/enrichR>). I took the `enrichr` function and modified it to run in parallel (`future_lapply`) and not print status messages.
-* Gene set enrichment analysis (`performGeneSetEnrichmentAnalysis()`) is performed using the [GSVA](https://bioconductor.org/packages/release/bioc/html/GSVA.html) R package. p- and q-value statistics are calculated through the same method as used by "Evaluation of methods to assign cell type labels to cell clusters from single-cell RNA-sequencing data", Diaz-Mejia *et al*., F1000Research (2019). [Link to publication](https://f1000research.com/articles/8-296/v2)
