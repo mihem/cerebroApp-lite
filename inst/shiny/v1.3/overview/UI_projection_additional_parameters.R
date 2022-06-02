@@ -30,6 +30,7 @@ output[["overview_projection_additional_parameters_UI"]] <- renderUI({
   )
 })
 
+
 ## make sure elements are loaded even though the box is collapsed
 outputOptions(
   output,

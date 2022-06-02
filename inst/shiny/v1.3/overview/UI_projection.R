@@ -63,15 +63,15 @@ output[["overview_projection_UI"]] <- renderUI({
             class = "btn-xs",
             style = "margin-right: 3px"
           ),
-          shinyFiles::shinySaveButton(
-            "overview_projection_export",
-            label = "export to PDF",
-            title = "Export dimensional reduction to PDF file.",
-            filetype = "pdf",
-            viewtype = "icon",
-            class = "btn-xs",
-            style = "margin-right: 3px"
-          ),
+          #shinyFiles::shinySaveButton(
+           # "overview_projection_export",
+            #label = "export to PDF",
+            #title = "Export dimensional reduction to PDF file.",
+            #filetype = "pdf",
+            #viewtype = "icon",
+            #class = "btn-xs",
+            #style = "margin-right: 3px"
+          #),
           shinyWidgets::dropdownButton(
             tags$div(
               style = "color: black !important;",

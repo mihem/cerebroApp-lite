@@ -76,3 +76,30 @@ output[["load_data_mode_closed"]] <- renderText({
     )
   }
 })
+
+##    checkboxInput(
+##                 "hover_checkbox",
+##                 label = "Switch on hover info to see additional metadata of each cell. Note that this increases plotting time.",
+##                 value = Cerebro.options[['projections_show_hover_info']],
+##                 ),
+##             checkboxInput(
+##                 "webgl_checkbox",
+##                 label = "Using WebGL is best for performance but might not be compatible with every browser",
+##                 value = TRUE,
+##                 )
+
+## ##----------------------------------------------------------------------------##
+## ## Oberserve event: use webgl?
+## ##----------------------------------------------------------------------------##
+## observeEvent(input[["webgl_checkbox"]], {
+##   preferences[["use_webgl"]] <- input[["webgl_checkbox"]]
+##   print(glue::glue("[{Sys.time()}] WebGL status: {preferences[['use_webgl']]}"))
+## })
+
+## ##----------------------------------------------------------------------------##
+## ## Oberserve event: show hover?
+## ##----------------------------------------------------------------------------##
+## observeEvent(input[["hover_checkbox"]], {
+##   preferences[["show_hover_info_in_projections"]] <- input[["hover_checkbox"]]
+##   print(glue::glue("[{Sys.time()}] Show hover info status: {preferences[['show_hover_info_in_projections']]}"))
+## })

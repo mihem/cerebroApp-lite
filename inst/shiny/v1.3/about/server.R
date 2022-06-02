@@ -31,51 +31,10 @@ output[["about"]] <- renderText({
     <ul>
       <li>Color palettes were built using colors from <a href="https://flatuicolors.com/" title="Flat UI Colors 2" target="_blank">https://flatuicolors.com/</a></li>
     </ul>
-    <br>
-    <b>Preferences</b>'
+    <br>'
   )
 })
 
-##
-output[["preferences"]] <- renderUI({
-  tagList(
-    tags$div(
-      title = "Using WebGL is best for performance but might not be compatible with every browser.",
-      checkboxInput(
-        "webgl_checkbox",
-        label = "Use WebGL",
-        value = TRUE
-      )
-    ),
-    tags$div(
-      title = "Switching off hover info in projections improves performance.",
-      checkboxInput(
-        "hover_info_in_projections_checkbox",
-        label = "Show hover info in projections",
-        value = Cerebro.options[['projections_show_hover_info']]
-      )
-    )
-  )
-})
-
-##
-observeEvent(input[["webgl_checkbox"]], {
-  preferences[["use_webgl"]] <- input[["webgl_checkbox"]]
-  print(glue::glue("[{Sys.time()}] WebGL status: {preferences[['use_webgl']]}"))
-})
-
-##
-observeEvent(input[["hover_info_in_projections_checkbox"]], {
-  preferences[["show_hover_info_in_projections"]] <- input[["hover_info_in_projections_checkbox"]]
-  print(glue::glue("[{Sys.time()}] Show hover info status: {preferences[['show_hover_info_in_projections']]}"))
-})
-
-##
-outputOptions(
-  output,
-  "preferences",
-  suspendWhenHidden = FALSE
-)
 
 ##
 output[["logo_Cerebro"]] <- renderImage({

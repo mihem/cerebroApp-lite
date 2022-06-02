@@ -11,7 +11,7 @@ tab_about <- tabItem(
       ),
       column(8,
         htmlOutput("about"),
-        uiOutput("preferences"),
+#        uiOutput("preferences"),
         actionButton("browser", "browser"),
         tags$script("$('#browser').hide();")
       ),
