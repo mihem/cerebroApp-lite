@@ -1,6 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Lifecycle: retired](https://img.shields.io/badge/lifecycle-retired-red.svg)
-[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fakechek1.svg?label=Follow%20%40fakechek1&style=social)](https://twitter.com/fakechek1)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)]
 
 <img align="right" width="35%" height="auto" src="vignettes/logo_Cerebro.png">
 
