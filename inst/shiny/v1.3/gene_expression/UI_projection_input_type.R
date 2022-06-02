@@ -2,10 +2,7 @@
 ## UI elements to choose whether gene(s) or gene sets should be analyzed
 ##----------------------------------------------------------------------------##
 output[["expression_projection_input_type_UI"]] <- renderUI({
-  req(
-    input[["expression_analysis_mode"]],
-    list_of_genes()
-  )
+  req(input[["expression_analysis_mode"]])
   if ( input[["expression_analysis_mode"]] == "Gene(s)" ) {
     selectizeInput(
       'expression_genes_input',

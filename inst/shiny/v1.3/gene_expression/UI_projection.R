@@ -22,7 +22,7 @@ output[["expression_projection_UI"]] <- renderUI({
             shinyWidgets::radioGroupButtons(
                inputId = "expression_analysis_mode",
                label = NULL,
-               choices = c("Gene(s)", "Gene set"),
+               choices = c("Gene(s)"),
                status = "primary",
                justified = TRUE,
                width = "100%"
@@ -95,15 +95,15 @@ output[["expression_projection_UI"]] <- renderUI({
               title = "Show additional information for this panel.",
               style = "margin-right: 3px"
             ),
-            shinyFiles::shinySaveButton(
-              "expression_projection_export",
-              label = "export to PDF",
-              title = "Export dimensional reduction to PDF file.",
-              filetype = "pdf",
-              viewtype = "icon",
-              class = "btn-xs",
-              style = "margin-right: 3px"
-            ),
+            ## shinyFiles::shinySaveButton(
+            ##   "expression_projection_export",
+            ##   label = "export to PDF",
+            ##   title = "Export dimensional reduction to PDF file.",
+            ##   filetype = "pdf",
+            ##   viewtype = "icon",
+            ##   class = "btn-xs",
+            ##   style = "margin-right: 3px"
+            ## ),
             shinyWidgets::dropdownButton(
               tags$div(
                 tags$style(
@@ -166,7 +166,7 @@ expression_projection_main_parameters_info <- list(
   text = HTML("
     The elements in this panel allow you to control what and how results are displayed across the whole tab.
     <ul>
-      <li><b>Gene(s) / Gene set:</b> Select whether you would like to select individual genes or gene sets. In the case of 'Gene(s)', you can select one or multiple genes from the input field below. If you select multiple genes, the mean expression across the selected genes will be calculated for each cell. If you select 'Gene set', you can select a gene set from the MSigDB. Species-specific gene names will be tried to retrieve, otherwise gene name matching is attempted. A list of which genes are present or missing in the data set can be found below the projection.</li>
+      <li><b>Gene(s)</b> In the case of 'Gene(s)', you can select one or multiple genes from the input field below. If you select multiple genes, the mean expression across the selected genes will be calculated for each cell. A list of which genes are present or missing in the data set can be found below the projection.</li>
       <li><b>Projection:</b> Select here which projection you want to see in the scatter plot on the right.</li>
     </ul>
     "
