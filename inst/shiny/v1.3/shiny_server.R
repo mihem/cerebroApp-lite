@@ -1,17 +1,7 @@
-## define users that can access Cerebro --------------------------------------##
-user_credentials <- tibble::tribble(
-   ~user,              ~password,       ~start, ~expire, ~admin,
-  "aie", "scRNAseq!", "2020-08-01",      NA,  FALSE,
-)
-
 ##----------------------------------------------------------------------------##
 ## Server function for Cerebro.
 ##----------------------------------------------------------------------------##
 server <- function(input, output, session) {
-
-res_auth <- shinymanager::secure_server(
-  check_credentials = shinymanager::check_credentials(user_credentials)
-)
 
   ##--------------------------------------------------------------------------##
   ## Load color setup, plotting and utility functions.
