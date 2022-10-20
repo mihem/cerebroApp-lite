@@ -77,7 +77,7 @@ prettifyTable <- function(
   columns_hide = NULL,
   download_file_name = NULL,
   page_length_default = 15,
-  page_length_menu = c(15, 30, 50, 100)
+  page_length_menu = c(15, 30, 50, 100, 1000)
 ) {
 
   ## replace Inf and -Inf values in numeric columns with 999 or -999,
