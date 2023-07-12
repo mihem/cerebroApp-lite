@@ -14,10 +14,8 @@ output[["about"]] <- renderText({
     <br>
     <b>Links</b><br>
     <ul>
-      <li><a href=https://romanhaa.github.io/cerebroApp/ title="Official cerebroApp website" target="_blank"><b>Official cerebroApp website</b></a></li>
-      <li><a href=https://github.com/romanhaa/Cerebro title="Official Cerebro repository on GitHub" target="_blank"><b>Official Cerebro repository on GitHub</b></a></li>
-      <li><a href=https://github.com/romanhaa/Cerebro/releases title="Cerebro releases" target="_blank"><b>Cerebro releases</b></a></li>
-      <li><a href=https://github.com/romanhaa/Cerebro/tree/master/examples title="Cerebro example data sets" target="_blank"><b>Cerebro example data sets</b></a></li>
+      <li><a href=https://github.com/romanhaa/Cerebro title="Discontinued Cerebro repository on GitHub (Roman Hillje)" target="_blank"><b>Discontinued Cerebro repository on GitHub (Roman Hillje)</b></a></li>
+      <li><a href=https://github.com/mihem/cerebroApp title="Fork of Cerebro App with the most recent version (Michael Heming)" target="_blank"><b>Fork of Cerebro App with the most recent version (Michael Heming)</b></a></li>
     </ul>
     <br>
     <b>Citation</b><br>
