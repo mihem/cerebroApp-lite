@@ -74,69 +74,69 @@ format in a named \code{list} called `tables`}
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{Cerebro_v1.3$new()}}
-\item \href{#method-setVersion}{\code{Cerebro_v1.3$setVersion()}}
-\item \href{#method-getVersion}{\code{Cerebro_v1.3$getVersion()}}
-\item \href{#method-checkIfGroupExists}{\code{Cerebro_v1.3$checkIfGroupExists()}}
-\item \href{#method-checkIfColumnExistsInMetadata}{\code{Cerebro_v1.3$checkIfColumnExistsInMetadata()}}
-\item \href{#method-addExperiment}{\code{Cerebro_v1.3$addExperiment()}}
-\item \href{#method-getExperiment}{\code{Cerebro_v1.3$getExperiment()}}
-\item \href{#method-addParameters}{\code{Cerebro_v1.3$addParameters()}}
-\item \href{#method-getParameters}{\code{Cerebro_v1.3$getParameters()}}
-\item \href{#method-addTechnicalInfo}{\code{Cerebro_v1.3$addTechnicalInfo()}}
-\item \href{#method-getTechnicalInfo}{\code{Cerebro_v1.3$getTechnicalInfo()}}
-\item \href{#method-addGroup}{\code{Cerebro_v1.3$addGroup()}}
-\item \href{#method-getGroups}{\code{Cerebro_v1.3$getGroups()}}
-\item \href{#method-getGroupLevels}{\code{Cerebro_v1.3$getGroupLevels()}}
-\item \href{#method-setMetaData}{\code{Cerebro_v1.3$setMetaData()}}
-\item \href{#method-getMetaData}{\code{Cerebro_v1.3$getMetaData()}}
-\item \href{#method-addGeneList}{\code{Cerebro_v1.3$addGeneList()}}
-\item \href{#method-getGeneLists}{\code{Cerebro_v1.3$getGeneLists()}}
-\item \href{#method-setExpression}{\code{Cerebro_v1.3$setExpression()}}
-\item \href{#method-getCellNames}{\code{Cerebro_v1.3$getCellNames()}}
-\item \href{#method-getGeneNames}{\code{Cerebro_v1.3$getGeneNames()}}
-\item \href{#method-getMeanExpressionForGenes}{\code{Cerebro_v1.3$getMeanExpressionForGenes()}}
-\item \href{#method-getMeanExpressionForCells}{\code{Cerebro_v1.3$getMeanExpressionForCells()}}
-\item \href{#method-getExpressionMatrix}{\code{Cerebro_v1.3$getExpressionMatrix()}}
-\item \href{#method-setCellCycle}{\code{Cerebro_v1.3$setCellCycle()}}
-\item \href{#method-getCellCycle}{\code{Cerebro_v1.3$getCellCycle()}}
-\item \href{#method-addProjection}{\code{Cerebro_v1.3$addProjection()}}
-\item \href{#method-availableProjections}{\code{Cerebro_v1.3$availableProjections()}}
-\item \href{#method-getProjection}{\code{Cerebro_v1.3$getProjection()}}
-\item \href{#method-addTree}{\code{Cerebro_v1.3$addTree()}}
-\item \href{#method-getTree}{\code{Cerebro_v1.3$getTree()}}
-\item \href{#method-addMostExpressedGenes}{\code{Cerebro_v1.3$addMostExpressedGenes()}}
-\item \href{#method-getGroupsWithMostExpressedGenes}{\code{Cerebro_v1.3$getGroupsWithMostExpressedGenes()}}
-\item \href{#method-getMostExpressedGenes}{\code{Cerebro_v1.3$getMostExpressedGenes()}}
-\item \href{#method-addMarkerGenes}{\code{Cerebro_v1.3$addMarkerGenes()}}
-\item \href{#method-getMethodsForMarkerGenes}{\code{Cerebro_v1.3$getMethodsForMarkerGenes()}}
-\item \href{#method-getGroupsWithMarkerGenes}{\code{Cerebro_v1.3$getGroupsWithMarkerGenes()}}
-\item \href{#method-getMarkerGenes}{\code{Cerebro_v1.3$getMarkerGenes()}}
-\item \href{#method-addEnrichedPathways}{\code{Cerebro_v1.3$addEnrichedPathways()}}
-\item \href{#method-getMethodsForEnrichedPathways}{\code{Cerebro_v1.3$getMethodsForEnrichedPathways()}}
-\item \href{#method-getGroupsWithEnrichedPathways}{\code{Cerebro_v1.3$getGroupsWithEnrichedPathways()}}
-\item \href{#method-getEnrichedPathways}{\code{Cerebro_v1.3$getEnrichedPathways()}}
-\item \href{#method-addTrajectory}{\code{Cerebro_v1.3$addTrajectory()}}
-\item \href{#method-getMethodsForTrajectories}{\code{Cerebro_v1.3$getMethodsForTrajectories()}}
-\item \href{#method-getNamesOfTrajectories}{\code{Cerebro_v1.3$getNamesOfTrajectories()}}
-\item \href{#method-getTrajectory}{\code{Cerebro_v1.3$getTrajectory()}}
-\item \href{#method-addExtraMaterial}{\code{Cerebro_v1.3$addExtraMaterial()}}
-\item \href{#method-addExtraTable}{\code{Cerebro_v1.3$addExtraTable()}}
-\item \href{#method-addExtraPlot}{\code{Cerebro_v1.3$addExtraPlot()}}
-\item \href{#method-getExtraMaterialCategories}{\code{Cerebro_v1.3$getExtraMaterialCategories()}}
-\item \href{#method-checkForExtraTables}{\code{Cerebro_v1.3$checkForExtraTables()}}
-\item \href{#method-getNamesOfExtraTables}{\code{Cerebro_v1.3$getNamesOfExtraTables()}}
-\item \href{#method-getExtraTable}{\code{Cerebro_v1.3$getExtraTable()}}
-\item \href{#method-checkForExtraPlots}{\code{Cerebro_v1.3$checkForExtraPlots()}}
-\item \href{#method-getNamesOfExtraPlots}{\code{Cerebro_v1.3$getNamesOfExtraPlots()}}
-\item \href{#method-getExtraPlot}{\code{Cerebro_v1.3$getExtraPlot()}}
-\item \href{#method-print}{\code{Cerebro_v1.3$print()}}
-\item \href{#method-clone}{\code{Cerebro_v1.3$clone()}}
+\item \href{#method-Cerebro_v1.3-new}{\code{Cerebro_v1.3$new()}}
+\item \href{#method-Cerebro_v1.3-setVersion}{\code{Cerebro_v1.3$setVersion()}}
+\item \href{#method-Cerebro_v1.3-getVersion}{\code{Cerebro_v1.3$getVersion()}}
+\item \href{#method-Cerebro_v1.3-checkIfGroupExists}{\code{Cerebro_v1.3$checkIfGroupExists()}}
+\item \href{#method-Cerebro_v1.3-checkIfColumnExistsInMetadata}{\code{Cerebro_v1.3$checkIfColumnExistsInMetadata()}}
+\item \href{#method-Cerebro_v1.3-addExperiment}{\code{Cerebro_v1.3$addExperiment()}}
+\item \href{#method-Cerebro_v1.3-getExperiment}{\code{Cerebro_v1.3$getExperiment()}}
+\item \href{#method-Cerebro_v1.3-addParameters}{\code{Cerebro_v1.3$addParameters()}}
+\item \href{#method-Cerebro_v1.3-getParameters}{\code{Cerebro_v1.3$getParameters()}}
+\item \href{#method-Cerebro_v1.3-addTechnicalInfo}{\code{Cerebro_v1.3$addTechnicalInfo()}}
+\item \href{#method-Cerebro_v1.3-getTechnicalInfo}{\code{Cerebro_v1.3$getTechnicalInfo()}}
+\item \href{#method-Cerebro_v1.3-addGroup}{\code{Cerebro_v1.3$addGroup()}}
+\item \href{#method-Cerebro_v1.3-getGroups}{\code{Cerebro_v1.3$getGroups()}}
+\item \href{#method-Cerebro_v1.3-getGroupLevels}{\code{Cerebro_v1.3$getGroupLevels()}}
+\item \href{#method-Cerebro_v1.3-setMetaData}{\code{Cerebro_v1.3$setMetaData()}}
+\item \href{#method-Cerebro_v1.3-getMetaData}{\code{Cerebro_v1.3$getMetaData()}}
+\item \href{#method-Cerebro_v1.3-addGeneList}{\code{Cerebro_v1.3$addGeneList()}}
+\item \href{#method-Cerebro_v1.3-getGeneLists}{\code{Cerebro_v1.3$getGeneLists()}}
+\item \href{#method-Cerebro_v1.3-setExpression}{\code{Cerebro_v1.3$setExpression()}}
+\item \href{#method-Cerebro_v1.3-getCellNames}{\code{Cerebro_v1.3$getCellNames()}}
+\item \href{#method-Cerebro_v1.3-getGeneNames}{\code{Cerebro_v1.3$getGeneNames()}}
+\item \href{#method-Cerebro_v1.3-getMeanExpressionForGenes}{\code{Cerebro_v1.3$getMeanExpressionForGenes()}}
+\item \href{#method-Cerebro_v1.3-getMeanExpressionForCells}{\code{Cerebro_v1.3$getMeanExpressionForCells()}}
+\item \href{#method-Cerebro_v1.3-getExpressionMatrix}{\code{Cerebro_v1.3$getExpressionMatrix()}}
+\item \href{#method-Cerebro_v1.3-setCellCycle}{\code{Cerebro_v1.3$setCellCycle()}}
+\item \href{#method-Cerebro_v1.3-getCellCycle}{\code{Cerebro_v1.3$getCellCycle()}}
+\item \href{#method-Cerebro_v1.3-addProjection}{\code{Cerebro_v1.3$addProjection()}}
+\item \href{#method-Cerebro_v1.3-availableProjections}{\code{Cerebro_v1.3$availableProjections()}}
+\item \href{#method-Cerebro_v1.3-getProjection}{\code{Cerebro_v1.3$getProjection()}}
+\item \href{#method-Cerebro_v1.3-addTree}{\code{Cerebro_v1.3$addTree()}}
+\item \href{#method-Cerebro_v1.3-getTree}{\code{Cerebro_v1.3$getTree()}}
+\item \href{#method-Cerebro_v1.3-addMostExpressedGenes}{\code{Cerebro_v1.3$addMostExpressedGenes()}}
+\item \href{#method-Cerebro_v1.3-getGroupsWithMostExpressedGenes}{\code{Cerebro_v1.3$getGroupsWithMostExpressedGenes()}}
+\item \href{#method-Cerebro_v1.3-getMostExpressedGenes}{\code{Cerebro_v1.3$getMostExpressedGenes()}}
+\item \href{#method-Cerebro_v1.3-addMarkerGenes}{\code{Cerebro_v1.3$addMarkerGenes()}}
+\item \href{#method-Cerebro_v1.3-getMethodsForMarkerGenes}{\code{Cerebro_v1.3$getMethodsForMarkerGenes()}}
+\item \href{#method-Cerebro_v1.3-getGroupsWithMarkerGenes}{\code{Cerebro_v1.3$getGroupsWithMarkerGenes()}}
+\item \href{#method-Cerebro_v1.3-getMarkerGenes}{\code{Cerebro_v1.3$getMarkerGenes()}}
+\item \href{#method-Cerebro_v1.3-addEnrichedPathways}{\code{Cerebro_v1.3$addEnrichedPathways()}}
+\item \href{#method-Cerebro_v1.3-getMethodsForEnrichedPathways}{\code{Cerebro_v1.3$getMethodsForEnrichedPathways()}}
+\item \href{#method-Cerebro_v1.3-getGroupsWithEnrichedPathways}{\code{Cerebro_v1.3$getGroupsWithEnrichedPathways()}}
+\item \href{#method-Cerebro_v1.3-getEnrichedPathways}{\code{Cerebro_v1.3$getEnrichedPathways()}}
+\item \href{#method-Cerebro_v1.3-addTrajectory}{\code{Cerebro_v1.3$addTrajectory()}}
+\item \href{#method-Cerebro_v1.3-getMethodsForTrajectories}{\code{Cerebro_v1.3$getMethodsForTrajectories()}}
+\item \href{#method-Cerebro_v1.3-getNamesOfTrajectories}{\code{Cerebro_v1.3$getNamesOfTrajectories()}}
+\item \href{#method-Cerebro_v1.3-getTrajectory}{\code{Cerebro_v1.3$getTrajectory()}}
+\item \href{#method-Cerebro_v1.3-addExtraMaterial}{\code{Cerebro_v1.3$addExtraMaterial()}}
+\item \href{#method-Cerebro_v1.3-addExtraTable}{\code{Cerebro_v1.3$addExtraTable()}}
+\item \href{#method-Cerebro_v1.3-addExtraPlot}{\code{Cerebro_v1.3$addExtraPlot()}}
+\item \href{#method-Cerebro_v1.3-getExtraMaterialCategories}{\code{Cerebro_v1.3$getExtraMaterialCategories()}}
+\item \href{#method-Cerebro_v1.3-checkForExtraTables}{\code{Cerebro_v1.3$checkForExtraTables()}}
+\item \href{#method-Cerebro_v1.3-getNamesOfExtraTables}{\code{Cerebro_v1.3$getNamesOfExtraTables()}}
+\item \href{#method-Cerebro_v1.3-getExtraTable}{\code{Cerebro_v1.3$getExtraTable()}}
+\item \href{#method-Cerebro_v1.3-checkForExtraPlots}{\code{Cerebro_v1.3$checkForExtraPlots()}}
+\item \href{#method-Cerebro_v1.3-getNamesOfExtraPlots}{\code{Cerebro_v1.3$getNamesOfExtraPlots()}}
+\item \href{#method-Cerebro_v1.3-getExtraPlot}{\code{Cerebro_v1.3$getExtraPlot()}}
+\item \href{#method-Cerebro_v1.3-print}{\code{Cerebro_v1.3$print()}}
+\item \href{#method-Cerebro_v1.3-clone}{\code{Cerebro_v1.3$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-new"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-new}{}}}
 \subsection{Method \code{new()}}{
 Create a new \code{Cerebro_v1.3} object.
 \subsection{Usage}{
@@ -148,8 +148,8 @@ A new \code{Cerebro_v1.3} object.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-setVersion"></a>}}
-\if{latex}{\out{\hypertarget{method-setVersion}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-setVersion"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-setVersion}{}}}
 \subsection{Method \code{setVersion()}}{
 Set the version of \code{cerebroApp} that was used to generate this
 object.
@@ -166,8 +166,8 @@ object.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getVersion"></a>}}
-\if{latex}{\out{\hypertarget{method-getVersion}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getVersion"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getVersion}{}}}
 \subsection{Method \code{getVersion()}}{
 Get the version of \code{cerebroApp} that was used to generate this
 object.
@@ -180,8 +180,8 @@ Version as \code{package_version} class.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-checkIfGroupExists"></a>}}
-\if{latex}{\out{\hypertarget{method-checkIfGroupExists}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-checkIfGroupExists"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-checkIfGroupExists}{}}}
 \subsection{Method \code{checkIfGroupExists()}}{
 Safety function that will check if a provided group name is present in
 the \code{groups} field.
@@ -198,8 +198,8 @@ the \code{groups} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-checkIfColumnExistsInMetadata"></a>}}
-\if{latex}{\out{\hypertarget{method-checkIfColumnExistsInMetadata}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-checkIfColumnExistsInMetadata"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-checkIfColumnExistsInMetadata}{}}}
 \subsection{Method \code{checkIfColumnExistsInMetadata()}}{
 Safety function that will check if a provided group name is present in
 the meta data.
@@ -216,8 +216,8 @@ the meta data.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addExperiment"></a>}}
-\if{latex}{\out{\hypertarget{method-addExperiment}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addExperiment"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addExperiment}{}}}
 \subsection{Method \code{addExperiment()}}{
 Add information to \code{experiment} field.
 \subsection{Usage}{
@@ -235,8 +235,8 @@ Add information to \code{experiment} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getExperiment"></a>}}
-\if{latex}{\out{\hypertarget{method-getExperiment}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getExperiment"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getExperiment}{}}}
 \subsection{Method \code{getExperiment()}}{
 Retrieve information from \code{experiment} field.
 \subsection{Usage}{
@@ -248,8 +248,8 @@ Retrieve information from \code{experiment} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addParameters"></a>}}
-\if{latex}{\out{\hypertarget{method-addParameters}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addParameters"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addParameters}{}}}
 \subsection{Method \code{addParameters()}}{
 Add information to \code{parameters} field.
 \subsection{Usage}{
@@ -267,8 +267,8 @@ Add information to \code{parameters} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getParameters"></a>}}
-\if{latex}{\out{\hypertarget{method-getParameters}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getParameters"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getParameters}{}}}
 \subsection{Method \code{getParameters()}}{
 Retrieve information from \code{parameters} field.
 \subsection{Usage}{
@@ -280,8 +280,8 @@ Retrieve information from \code{parameters} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addTechnicalInfo"></a>}}
-\if{latex}{\out{\hypertarget{method-addTechnicalInfo}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addTechnicalInfo"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addTechnicalInfo}{}}}
 \subsection{Method \code{addTechnicalInfo()}}{
 Add information to \code{technical_info} field.
 \subsection{Usage}{
@@ -299,8 +299,8 @@ Add information to \code{technical_info} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getTechnicalInfo"></a>}}
-\if{latex}{\out{\hypertarget{method-getTechnicalInfo}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getTechnicalInfo"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getTechnicalInfo}{}}}
 \subsection{Method \code{getTechnicalInfo()}}{
 Retrieve information from \code{technical_info} field.
 \subsection{Usage}{
@@ -312,8 +312,8 @@ Retrieve information from \code{technical_info} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addGroup"></a>}}
-\if{latex}{\out{\hypertarget{method-addGroup}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addGroup"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addGroup}{}}}
 \subsection{Method \code{addGroup()}}{
 Add group to the groups registered in the \code{groups} field.
 \subsection{Usage}{
@@ -331,8 +331,8 @@ Add group to the groups registered in the \code{groups} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGroups"></a>}}
-\if{latex}{\out{\hypertarget{method-getGroups}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGroups"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGroups}{}}}
 \subsection{Method \code{getGroups()}}{
 Retrieve all names in the \code{groups} field.
 \subsection{Usage}{
@@ -344,8 +344,8 @@ Retrieve all names in the \code{groups} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGroupLevels"></a>}}
-\if{latex}{\out{\hypertarget{method-getGroupLevels}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGroupLevels"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGroupLevels}{}}}
 \subsection{Method \code{getGroupLevels()}}{
 Retrieve group levels for a group registered in the \code{groups} field.
 \subsection{Usage}{
@@ -364,8 +364,8 @@ Retrieve group levels for a group registered in the \code{groups} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-setMetaData"></a>}}
-\if{latex}{\out{\hypertarget{method-setMetaData}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-setMetaData"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-setMetaData}{}}}
 \subsection{Method \code{setMetaData()}}{
 Set meta data for cells.
 \subsection{Usage}{
@@ -383,8 +383,8 @@ the number of columns in the transcript count matrix.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMetaData"></a>}}
-\if{latex}{\out{\hypertarget{method-getMetaData}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMetaData"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMetaData}{}}}
 \subsection{Method \code{getMetaData()}}{
 Retrieve meta data for cells.
 \subsection{Usage}{
@@ -396,8 +396,8 @@ Retrieve meta data for cells.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addGeneList"></a>}}
-\if{latex}{\out{\hypertarget{method-addGeneList}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addGeneList"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addGeneList}{}}}
 \subsection{Method \code{addGeneList()}}{
 Add a gene list to the \code{gene_lists}.
 \subsection{Usage}{
@@ -415,8 +415,8 @@ Add a gene list to the \code{gene_lists}.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGeneLists"></a>}}
-\if{latex}{\out{\hypertarget{method-getGeneLists}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGeneLists"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGeneLists}{}}}
 \subsection{Method \code{getGeneLists()}}{
 Retrieve gene lists from the \code{gene_lists}.
 \subsection{Usage}{
@@ -428,8 +428,8 @@ Retrieve gene lists from the \code{gene_lists}.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-setExpression"></a>}}
-\if{latex}{\out{\hypertarget{method-setExpression}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-setExpression"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-setExpression}{}}}
 \subsection{Method \code{setExpression()}}{
 Set transcript count matrix.
 \subsection{Usage}{
@@ -447,8 +447,8 @@ of rows in the \code{meta_data} field.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getCellNames"></a>}}
-\if{latex}{\out{\hypertarget{method-getCellNames}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getCellNames"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getCellNames}{}}}
 \subsection{Method \code{getCellNames()}}{
 Get names of all cells.
 \subsection{Usage}{
@@ -460,8 +460,8 @@ Get names of all cells.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGeneNames"></a>}}
-\if{latex}{\out{\hypertarget{method-getGeneNames}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGeneNames"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGeneNames}{}}}
 \subsection{Method \code{getGeneNames()}}{
 Get names of all genes in transcript count matrix.
 \subsection{Usage}{
@@ -473,8 +473,8 @@ Get names of all genes in transcript count matrix.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMeanExpressionForGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-getMeanExpressionForGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMeanExpressionForGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMeanExpressionForGenes}{}}}
 \subsection{Method \code{getMeanExpressionForGenes()}}{
 Retrieve mean expression across all cells in the data set for a set of
 genes.
@@ -495,8 +495,8 @@ mean expression across all cells in the data set.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMeanExpressionForCells"></a>}}
-\if{latex}{\out{\hypertarget{method-getMeanExpressionForCells}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMeanExpressionForCells"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMeanExpressionForCells}{}}}
 \subsection{Method \code{getMeanExpressionForCells()}}{
 Retrieve (mean) expression for a single gene or a set of genes for a
 given set of cells.
@@ -521,8 +521,8 @@ each specified cell.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getExpressionMatrix"></a>}}
-\if{latex}{\out{\hypertarget{method-getExpressionMatrix}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getExpressionMatrix"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getExpressionMatrix}{}}}
 \subsection{Method \code{getExpressionMatrix()}}{
 Retrieve transcript count matrix.
 \subsection{Usage}{
@@ -545,8 +545,8 @@ Dense transcript count matrix for specified cells and genes.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-setCellCycle"></a>}}
-\if{latex}{\out{\hypertarget{method-setCellCycle}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-setCellCycle"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-setCellCycle}{}}}
 \subsection{Method \code{setCellCycle()}}{
 Add columns containing cell cycle assignments to the \code{cell_cycle}
 field.
@@ -564,8 +564,8 @@ assignments.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getCellCycle"></a>}}
-\if{latex}{\out{\hypertarget{method-getCellCycle}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getCellCycle"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getCellCycle}{}}}
 \subsection{Method \code{getCellCycle()}}{
 Retrieve column names containing cell cycle assignments.
 \subsection{Usage}{
@@ -577,8 +577,8 @@ Retrieve column names containing cell cycle assignments.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addProjection"></a>}}
-\if{latex}{\out{\hypertarget{method-addProjection}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addProjection"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addProjection}{}}}
 \subsection{Method \code{addProjection()}}{
 Add projections (dimensional reductions).
 \subsection{Usage}{
@@ -597,8 +597,8 @@ projection.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-availableProjections"></a>}}
-\if{latex}{\out{\hypertarget{method-availableProjections}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-availableProjections"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-availableProjections}{}}}
 \subsection{Method \code{availableProjections()}}{
 Get list of available projections (dimensional reductions).
 \subsection{Usage}{
@@ -610,8 +610,8 @@ Get list of available projections (dimensional reductions).
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getProjection"></a>}}
-\if{latex}{\out{\hypertarget{method-getProjection}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getProjection"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getProjection}{}}}
 \subsection{Method \code{getProjection()}}{
 Retrieve data for a specific projection.
 \subsection{Usage}{
@@ -630,8 +630,8 @@ Retrieve data for a specific projection.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addTree"></a>}}
-\if{latex}{\out{\hypertarget{method-addTree}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addTree"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addTree}{}}}
 \subsection{Method \code{addTree()}}{
 Add phylogenetic tree to \code{trees} field.
 \subsection{Usage}{
@@ -649,8 +649,8 @@ Add phylogenetic tree to \code{trees} field.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getTree"></a>}}
-\if{latex}{\out{\hypertarget{method-getTree}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getTree"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getTree}{}}}
 \subsection{Method \code{getTree()}}{
 Retrieve phylogenetic tree for a specific group.
 \subsection{Usage}{
@@ -669,8 +669,8 @@ Phylogenetic tree as \code{phylo} object.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addMostExpressedGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-addMostExpressedGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addMostExpressedGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addMostExpressedGenes}{}}}
 \subsection{Method \code{addMostExpressedGenes()}}{
 Add table of most expressed genes.
 \subsection{Usage}{
@@ -689,8 +689,8 @@ belong to. Must be registered in the \code{groups} field.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGroupsWithMostExpressedGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-getGroupsWithMostExpressedGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGroupsWithMostExpressedGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGroupsWithMostExpressedGenes}{}}}
 \subsection{Method \code{getGroupsWithMostExpressedGenes()}}{
 Retrieve names of grouping variables for which most expressed genes are
 available.
@@ -704,8 +704,8 @@ available.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMostExpressedGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-getMostExpressedGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMostExpressedGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMostExpressedGenes}{}}}
 \subsection{Method \code{getMostExpressedGenes()}}{
 Retrieve table of most expressed genes for a grouping variable.
 \subsection{Usage}{
@@ -726,8 +726,8 @@ the specified grouping variable.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addMarkerGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-addMarkerGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addMarkerGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addMarkerGenes}{}}}
 \subsection{Method \code{addMarkerGenes()}}{
 Add table of marker genes.
 \subsection{Usage}{
@@ -749,8 +749,8 @@ Cerebro. It is recommended to use the grouping variable, e.g.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMethodsForMarkerGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-getMethodsForMarkerGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMethodsForMarkerGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMethodsForMarkerGenes}{}}}
 \subsection{Method \code{getMethodsForMarkerGenes()}}{
 Retrieve names of methods that were used to generate marker genes.
 \subsection{Usage}{
@@ -763,8 +763,8 @@ genes.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGroupsWithMarkerGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-getGroupsWithMarkerGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGroupsWithMarkerGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGroupsWithMarkerGenes}{}}}
 \subsection{Method \code{getGroupsWithMarkerGenes()}}{
 Retrieve grouping variables for which marker genes were generated using
 a specified method.
@@ -785,8 +785,8 @@ calculated using the specified method.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMarkerGenes"></a>}}
-\if{latex}{\out{\hypertarget{method-getMarkerGenes}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMarkerGenes"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMarkerGenes}{}}}
 \subsection{Method \code{getMarkerGenes()}}{
 Retrieve table of marker genes for specific method and grouping variable.
 \subsection{Usage}{
@@ -808,8 +808,8 @@ combination of method and grouping variable.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addEnrichedPathways"></a>}}
-\if{latex}{\out{\hypertarget{method-addEnrichedPathways}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addEnrichedPathways"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addEnrichedPathways}{}}}
 \subsection{Method \code{addEnrichedPathways()}}{
 Add table of enriched pathways.
 \subsection{Usage}{
@@ -832,8 +832,8 @@ Cerebro. It is recommended to use the grouping variable, e.g.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMethodsForEnrichedPathways"></a>}}
-\if{latex}{\out{\hypertarget{method-getMethodsForEnrichedPathways}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMethodsForEnrichedPathways"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMethodsForEnrichedPathways}{}}}
 \subsection{Method \code{getMethodsForEnrichedPathways()}}{
 Retrieve names of methods that were used to generate enriched pathways.
 \subsection{Usage}{
@@ -846,8 +846,8 @@ pathways.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getGroupsWithEnrichedPathways"></a>}}
-\if{latex}{\out{\hypertarget{method-getGroupsWithEnrichedPathways}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getGroupsWithEnrichedPathways"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getGroupsWithEnrichedPathways}{}}}
 \subsection{Method \code{getGroupsWithEnrichedPathways()}}{
 Retrieve grouping variables for which enriched pathways were generated
 using a specified method.
@@ -868,8 +868,8 @@ calculated using the specified method.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getEnrichedPathways"></a>}}
-\if{latex}{\out{\hypertarget{method-getEnrichedPathways}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getEnrichedPathways"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getEnrichedPathways}{}}}
 \subsection{Method \code{getEnrichedPathways()}}{
 Retrieve table of enriched pathways for specific method and grouping
 variable.
@@ -892,8 +892,8 @@ combination of method and grouping variable.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addTrajectory"></a>}}
-\if{latex}{\out{\hypertarget{method-addTrajectory}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addTrajectory"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addTrajectory}{}}}
 \subsection{Method \code{addTrajectory()}}{
 Add trajectory.
 \subsection{Usage}{
@@ -916,8 +916,8 @@ etc.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getMethodsForTrajectories"></a>}}
-\if{latex}{\out{\hypertarget{method-getMethodsForTrajectories}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getMethodsForTrajectories"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getMethodsForTrajectories}{}}}
 \subsection{Method \code{getMethodsForTrajectories()}}{
 Retrieve names of methods that were used to generate trajectories.
 \subsection{Usage}{
@@ -930,8 +930,8 @@ trajectories.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getNamesOfTrajectories"></a>}}
-\if{latex}{\out{\hypertarget{method-getNamesOfTrajectories}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getNamesOfTrajectories"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getNamesOfTrajectories}{}}}
 \subsection{Method \code{getNamesOfTrajectories()}}{
 Retrieve names of available trajectories for a specified method.
 \subsection{Usage}{
@@ -950,8 +950,8 @@ Retrieve names of available trajectories for a specified method.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getTrajectory"></a>}}
-\if{latex}{\out{\hypertarget{method-getTrajectory}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getTrajectory"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getTrajectory}{}}}
 \subsection{Method \code{getTrajectory()}}{
 Retrieve data for a specific trajectory.
 \subsection{Usage}{
@@ -973,8 +973,8 @@ trajectory.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addExtraMaterial"></a>}}
-\if{latex}{\out{\hypertarget{method-addExtraMaterial}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addExtraMaterial"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addExtraMaterial}{}}}
 \subsection{Method \code{addExtraMaterial()}}{
 Add content to extra material field.
 \subsection{Usage}{
@@ -996,8 +996,8 @@ format and plots must be created with \code{ggplot2}.}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addExtraTable"></a>}}
-\if{latex}{\out{\hypertarget{method-addExtraTable}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addExtraTable"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addExtraTable}{}}}
 \subsection{Method \code{addExtraTable()}}{
 Add table to `extra_material` slot.
 \subsection{Usage}{
@@ -1015,8 +1015,8 @@ Add table to `extra_material` slot.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-addExtraPlot"></a>}}
-\if{latex}{\out{\hypertarget{method-addExtraPlot}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-addExtraPlot"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-addExtraPlot}{}}}
 \subsection{Method \code{addExtraPlot()}}{
 Add plot to `extra_material` slot.
 \subsection{Usage}{
@@ -1035,8 +1035,8 @@ Add plot to `extra_material` slot.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getExtraMaterialCategories"></a>}}
-\if{latex}{\out{\hypertarget{method-getExtraMaterialCategories}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getExtraMaterialCategories"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getExtraMaterialCategories}{}}}
 \subsection{Method \code{getExtraMaterialCategories()}}{
 Get names of categories for which extra material is available.
 \subsection{Usage}{
@@ -1048,8 +1048,8 @@ Get names of categories for which extra material is available.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-checkForExtraTables"></a>}}
-\if{latex}{\out{\hypertarget{method-checkForExtraTables}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-checkForExtraTables"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-checkForExtraTables}{}}}
 \subsection{Method \code{checkForExtraTables()}}{
 Check whether there are tables in the extra materials.
 \subsection{Usage}{
@@ -1062,8 +1062,8 @@ materials.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getNamesOfExtraTables"></a>}}
-\if{latex}{\out{\hypertarget{method-getNamesOfExtraTables}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getNamesOfExtraTables"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getNamesOfExtraTables}{}}}
 \subsection{Method \code{getNamesOfExtraTables()}}{
 Get names of tables in extra materials.
 \subsection{Usage}{
@@ -1075,8 +1075,8 @@ Get names of tables in extra materials.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getExtraTable"></a>}}
-\if{latex}{\out{\hypertarget{method-getExtraTable}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getExtraTable"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getExtraTable}{}}}
 \subsection{Method \code{getExtraTable()}}{
 Get table from extra materials.
 \subsection{Usage}{
@@ -1095,8 +1095,8 @@ Requested table in \code{data.frame} format.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-checkForExtraPlots"></a>}}
-\if{latex}{\out{\hypertarget{method-checkForExtraPlots}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-checkForExtraPlots"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-checkForExtraPlots}{}}}
 \subsection{Method \code{checkForExtraPlots()}}{
 Check whether there are plots in the extra materials.
 \subsection{Usage}{
@@ -1109,8 +1109,8 @@ materials.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getNamesOfExtraPlots"></a>}}
-\if{latex}{\out{\hypertarget{method-getNamesOfExtraPlots}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getNamesOfExtraPlots"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getNamesOfExtraPlots}{}}}
 \subsection{Method \code{getNamesOfExtraPlots()}}{
 Get names of plots in extra materials.
 \subsection{Usage}{
@@ -1122,8 +1122,8 @@ Get names of plots in extra materials.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-getExtraPlot"></a>}}
-\if{latex}{\out{\hypertarget{method-getExtraPlot}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-getExtraPlot"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-getExtraPlot}{}}}
 \subsection{Method \code{getExtraPlot()}}{
 Get plot from extra materials.
 \subsection{Usage}{
@@ -1142,8 +1142,8 @@ Requested plot made with \code{ggplot2}.
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-print"></a>}}
-\if{latex}{\out{\hypertarget{method-print}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-print"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-print}{}}}
 \subsection{Method \code{print()}}{
 Show overview of object and the data it contains.
 Print overview of available marker gene results for \code{self$print()}
@@ -1158,8 +1158,8 @@ Print overview of extra material for \code{self$print()} function.
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-Cerebro_v1.3-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-Cerebro_v1.3-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{
