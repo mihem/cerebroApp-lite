@@ -78,7 +78,7 @@
 #'
 #' @export
 #'
-launchCerebrov1.4 <- function(
+launchCerebroV1.4 <- function(
   mode = "open",
   maxFileSize = 800,
   crb_file_to_load = NULL,
