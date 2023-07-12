@@ -197,7 +197,7 @@ exportFromSeurat <- function(
   }
 
   ## create new Cerebro object
-  export <- Cerebro_v1.4$new()
+  export <- Cerebro_v1.3$new()
 
   ## add experiment name
   export$addExperiment('experiment_name', experiment_name)
