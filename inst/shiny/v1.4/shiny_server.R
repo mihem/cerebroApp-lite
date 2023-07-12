@@ -75,7 +75,7 @@ server <- function(input, output, session) {
     ## grab path from 'input_file' if one is specified
     if (
       !is.null(input[["input_file"]]) &&
-      !is.na(input[["input_file"]]) &&
+      all(!is.na(input[["input_file"]])) &&
       file.exists(input[["input_file"]]$datapath)
     ) {
       path_to_load <- input[["input_file"]]$datapath
