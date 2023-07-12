@@ -5,7 +5,7 @@
 #' Launch Cerebro interface.
 #'
 #' @param version Which version of Cerebro to launch: "v1.0", "v1.1", "v1.2",
-#' "v1.3"; defaults to "v1.3".
+#' "v1.3", "v1.4"; defaults to "v1.4".
 #' @param ... Further parameters that are used by \code{shiny::runApp}, e.g.
 #' \code{host} an \code{port}, and the specific versions of Cerebro. See
 #' \code{launchCerebroV1.x} for details.
@@ -20,7 +20,7 @@
 #' @examples
 #' if ( interactive() ) {
 #'   launchCerebro(
-#'     version = "v1.3",
+#'     version = "v1.4",
 #'     options = list(port = 1337)
 #'   )
 #' }
