@@ -34,6 +34,32 @@ boxTitle <- function(title) {
 }
 
 ##----------------------------------------------------------------------------##
+## timeout function
+##----------------------------------------------------------------------------##
+
+timeoutSeconds <- 600
+
+inactivity <- sprintf("function idleTimer() {
+var t = setTimeout(logout, %s);
+window.onmousemove = resetTimer; // catches mouse movements
+window.onmousedown = resetTimer; // catches mouse movements
+window.onclick = resetTimer;     // catches mouse clicks
+window.onscroll = resetTimer;    // catches scrolling
+window.onkeypress = resetTimer;  //catches keyboard actions
+
+function logout() {
+Shiny.setInputValue('timeOut', '%ss')
+}
+
+function resetTimer() {
+clearTimeout(t);
+t = setTimeout(logout, %s);  // time is in milliseconds (1000 is 1 second)
+}
+}
+idleTimer();", timeoutSeconds*1000, timeoutSeconds, timeoutSeconds*1000)
+
+
+##----------------------------------------------------------------------------##
 ## Load UI content for each tab.
 ##----------------------------------------------------------------------------##
 source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/load_data/UI.R"), local = TRUE)
@@ -79,7 +105,8 @@ ui <- dashboardPage(
       tab_gene_id_conversion,
       tab_color_management,
       tab_about
-    )
+    ),
+    tags$script(inactivity)
   )
 )
 

@@ -278,6 +278,19 @@ server <- function(input, output, session) {
   })
 
   ##--------------------------------------------------------------------------##
+  ## Print message when session is closed due to inactivity.
+  ##--------------------------------------------------------------------------##
+  observeEvent(input$timeOut, {
+    print(paste0("Session (", session$token, ") timed out at: ", Sys.time()))
+    showModal(modalDialog(
+      title = "Timeout",
+      paste("Session timeout due to", input$timeOut, "inactivity -", Sys.time()),
+      footer = NULL
+    ))
+    session$close()
+  })
+
+  ##--------------------------------------------------------------------------##
   ## Tabs.
   ##--------------------------------------------------------------------------##
   source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/load_data/server.R"), local = TRUE)

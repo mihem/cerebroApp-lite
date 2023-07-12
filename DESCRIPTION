@@ -1,6 +1,6 @@
 Package: cerebroApp
 Title: Interactive visualization of scRNA-seq data with Cerebro
-Version: 1.4
+Version: 1.4.1
 Authors@R: c(
   person("Roman", "Hillje", email = "roman.hillje@googlemail.com", role = c("aut", "cre")),
   person("Mischko", "Heming", email = "mihem@mailbox.org", role = c("aut"))
