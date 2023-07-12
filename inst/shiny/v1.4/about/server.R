@@ -10,6 +10,7 @@ output[["about"]] <- renderText({
     <br>
     <b>Author</b><br>
     Roman Hillje<br>
+   Michael Heming <br>
     <br>
     <b>Links</b><br>
     <ul>

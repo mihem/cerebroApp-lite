@@ -2,7 +2,7 @@
 ## Tab: Overview
 ##----------------------------------------------------------------------------##
 js_code_overview_projection <- readr::read_file(
-  paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/overview/js_projection_update_plot.js")
+  paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/overview/js_projection_update_plot.js")
 )
 
 tab_overview <- tabItem(

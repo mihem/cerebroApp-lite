@@ -3,7 +3,9 @@
 
 <img align="right" width="35%" height="auto" src="vignettes/logo_Cerebro.png">
 
-:warning: This is a fork of the excellent [cerebroApp](https://github.com/romanhaa/cerebroApp) R package from [Roman Hillje](https://github.com/romanhaa), which was sadly discontinued.
+This is a fork of the excellent [cerebroApp](https://github.com/romanhaa/cerebroApp) R package from [Roman Hillje](https://github.com/romanhaa), which was sadly discontinued.
+This is supposed to be a lightweight version that only keeps the key functions and focuses on speed.
+
 The fork can be installed with:
 
 ```r

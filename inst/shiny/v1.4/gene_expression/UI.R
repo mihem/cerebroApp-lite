@@ -2,7 +2,7 @@
 ## Tab: Gene (set) expression
 ##----------------------------------------------------------------------------##
 js_code_gene_expression_projection <- readr::read_file(
-  paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/gene_expression/js_projection_update_plot.js")
+  paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/gene_expression/js_projection_update_plot.js")
 )
 
 tab_gene_expression <- tabItem(

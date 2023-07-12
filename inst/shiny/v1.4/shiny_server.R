@@ -6,9 +6,9 @@ server <- function(input, output, session) {
   ##--------------------------------------------------------------------------##
   ## Load color setup, plotting and utility functions.
   ##--------------------------------------------------------------------------##
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/color_setup.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/plotting_functions.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/utility_functions.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/color_setup.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/plotting_functions.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/utility_functions.R"), local = TRUE)
 
   ##--------------------------------------------------------------------------##
   ## Central parameters.
@@ -92,7 +92,7 @@ server <- function(input, output, session) {
     }
     ## assign path to example file if none of the above apply
     if (path_to_load=='') {
-      path_to_load <- system.file("extdata/v1.3/example.crb", package = "cerebroApp")
+      path_to_load <- system.file("extdata/v1.4/example.crb", package = "cerebroApp")
     }
     ## set reactive value to new file path
     data_to_load$path <- path_to_load
@@ -293,12 +293,12 @@ server <- function(input, output, session) {
   ##--------------------------------------------------------------------------##
   ## Tabs.
   ##--------------------------------------------------------------------------##
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/load_data/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/overview/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/groups/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/marker_genes/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/gene_expression/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/gene_id_conversion/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/color_management/server.R"), local = TRUE)
-  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.3/about/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/load_data/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/overview/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/groups/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/marker_genes/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/gene_expression/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/gene_id_conversion/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/color_management/server.R"), local = TRUE)
+  source(paste0(Cerebro.options[["cerebro_root"]], "/shiny/v1.4/about/server.R"), local = TRUE)
 }
