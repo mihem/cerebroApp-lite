@@ -4,7 +4,7 @@
 \alias{launchCerebro}
 \title{Launch Cerebro interface.}
 \usage{
-launchCerebro(version = "v1.3", ...)
+launchCerebro(version = "v1.4", ...)
 }
 \arguments{
 \item{version}{Which version of Cerebro to launch: "v1.0", "v1.1", "v1.2",
