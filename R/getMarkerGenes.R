@@ -121,16 +121,6 @@ getMarkerGenes <- function(
     )
   }
 
-  ## check if `counts` matrix exist in provided assay
-  if ( is.null(object@assays[[assay]]@counts) ) {
-    stop(
-      paste0(
-        '`counts` matrix could not be found in `', assay, '` assay slot of the provided Seurat object.'
-      ),
-      call. = FALSE
-    )
-  }
-
   ## check if provided groups are present in meta data
   if ( any(which(groups %in% colnames(object@meta.data) == FALSE)) ) {
     missing_groups <- groups[which(groups %in% colnames(object@meta.data) == FALSE)]
