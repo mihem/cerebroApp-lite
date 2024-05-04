@@ -32,10 +32,10 @@ data set (\code{closed}, removes the "Load data" element); defaults to
 Cerebro. Useful when using/hosting Cerebro in \code{closed} mode. Defaults to
 \code{NULL}.}
 
-\item{expression_matrix_mode}{Mode of expression matrix. Can be either
-default, h5, or BPCells.}
+\item{expression_matrix_mode}{Optional: Mode of expression matrix. Can be either
+NULL, h5, or BPCells.}
 
-\item{expression_matrix_h5}{Path to \code{.h5} file containing an expression
+\item{expression_matrix_h5}{Optional: Path to \code{.h5} file containing an expression
 matrix created with \code{HDF5Array::writeTENxMatrix()}, with genes as
 columns and cells as rows, contrary to the conventional format of genes as
 rows and cells as columns. This format greatly favors performance for
@@ -51,7 +51,7 @@ that needs to be loaded tends to be very small). By default, this value is
 set to \code{NULL}, meaning that the expression matrix is expected to be part
 of the \code{.crb} file.}
 
-\item{expression_matrix_BPCells}{Path to BPCells directory created with 
+\item{expression_matrix_BPCells}{Optional: Path to BPCells directory created with 
 \code{BPCells::write_matrix_dir()}. This is a hopefully faster alternative to h5 
 with a similar approach.}
 

@@ -109,48 +109,36 @@ server <- function(input, output, session) {
       print(glue::glue("[{Sys.time()}] Load data set from file: {dataset_to_load}"))
       ## read the file
       data <- readRDS(dataset_to_load)
-      if(
-        exists('Cerebro.options') &&
-        Cerebro.options[["expression_matrix_mode"]] == 'h5' &&
-        file.exists(Cerebro.options[['expression_matrix_h5']])
+      if (
+        exists("Cerebro.options") &&
+          Cerebro.options[["expression_matrix_mode"]] == "h5" &&
+          file.exists(Cerebro.options[["expression_matrix_h5"]])
       ) {
-        print(glue::glue("[{Sys.time()}] Loading expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
-        expression_matrix <- t(HDF5Array::TENxMatrix(Cerebro.options[['expression_matrix_h5']], group='expression'))
-        if (nrow(data$meta_data)!=ncol(expression_matrix)) {
-          shinyWidgets::sendSweetAlert(
-            session = session,
-            title = "Error!",
-            text = HTML(glue::glue(
-              "The number of cells in the meta data ",
-              "({format(nrow(data$meta_data), big.mark=',')}) does not match ",
-              "the number of cells in the provided expression matrix ",
-              "({format(ncol(expression_matrix), big.mark=',')}).<br><br>",
-              "Until fixed, the 'Gene (set) expression' tab will not work."
-            )),
-            type = "error",
-            html = TRUE
-          )
-        } else if (
-          exists('Cerebro.options') &&
-          Cerebro.options[["expression_matrix_mode"]] == 'BPCells' &&
-          file.exists(Cerebro.options[['expression_matrix_BPCells']])
-        ) {
-          expression_matrix <- BPCells::open_matrix_dir(Cerebro.options[['expression_matrix_BPCells']])
-        } else {
-          data$expression <- expression_matrix
-        }
+        print(glue::glue("[{Sys.time()}] Loading h5 expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
+        expression_matrix <- t(HDF5Array::TENxMatrix(Cerebro.options[["expression_matrix_h5"]], group = "expression"))
+      } else if (
+        exists("Cerebro.options") &&
+          Cerebro.options[["expression_matrix_mode"]] == "BPCells" &&
+          file.exists(Cerebro.options[["expression_matrix_BPCells"]])
+      ) {
+        print(glue::glue("[{Sys.time()}] Loading BPCells expression matrix from: {Cerebro.options[['expression_matrix_BPCells']]}"))
+        expression_matrix <- BPCells::open_matrix_dir(Cerebro.options[["expression_matrix_BPCells"]])
+      } else {
+        message("expression_matrix_mode is not set to 'h5' or 'BPCells', skipping loading expression matrix")
       }
     }
+    data$expression <- expression_matrix
     ## log message
     message(data$print())
     ## check if 'expression' slot exists and print log message with its format
     ## if it does
-    if ( !is.null(data$expression) ) {
+    if (!is.null(data$expression)) {
       print(glue::glue("[{Sys.time()}] Format of expression data: {class(data$expression)}"))
     }
     ## return loaded data
     return(data)
   })
+
 
   # list of available trajectories
   available_trajectories <- reactive({
