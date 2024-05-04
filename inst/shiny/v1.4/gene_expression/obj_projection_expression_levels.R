@@ -25,7 +25,12 @@ expression_projection_expression_levels <- reactive({
       }
     } else if (length(expression_selected_genes()$genes_to_display_present) == 1) {
       expression_levels <- data_set()$expression[expression_selected_genes()$genes_to_display_present,]
-      expression_levels <- unname(expression_levels)
+      if(is.numeric(expression_levels)) {
+       expression_levels <- unname(expression_levels)
+      }
+      if (is(expression_levels, "IterableMatrix")) {
+      expression_levels <- as.numeric(as(expression_levels, "matrix"))
+      }
       expression_levels <- expression_levels[isolate(expression_projection_cells_to_show())]
     } else if (length(expression_selected_genes()$genes_to_display_present) >= 2) {
       expression_levels <- data_set()$expression[expression_selected_genes()$genes_to_display_present,]
