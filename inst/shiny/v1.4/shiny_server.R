@@ -111,7 +111,7 @@ server <- function(input, output, session) {
       data <- readRDS(dataset_to_load)
       if(
         exists('Cerebro.options') &&
-        !is.null(Cerebro.options[['expression_matrix_h5']]) &&
+        Cerebro.options[["expression_matrix_mode"]] == 'h5' &&
         file.exists(Cerebro.options[['expression_matrix_h5']])
       ) {
         print(glue::glue("[{Sys.time()}] Loading expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
