@@ -24,6 +24,7 @@ biocViews:
   Visualization
 Imports:
   ape (>= 5.4),
+  BPCells,
   biomaRt (>= 2.38.0),
   colourpicker (>= 1.0),
   dplyr (>= 1.0.0),

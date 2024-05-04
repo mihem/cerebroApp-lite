@@ -130,6 +130,12 @@ server <- function(input, output, session) {
             type = "error",
             html = TRUE
           )
+        } else if (
+          exists('Cerebro.options') &&
+          Cerebro.options[["expression_matrix_mode"]] == 'BPCells' &&
+          file.exists(Cerebro.options[['expression_matrix_BPCells']])
+        ) {
+          expression_matrix <- BPCells::open_matrix_dir(Cerebro.options[['expression_matrix_BPCells']])
         } else {
           data$expression <- expression_matrix
         }

@@ -30,6 +30,9 @@
 #' that needs to be loaded tends to be very small). By default, this value is
 #' set to \code{NULL}, meaning that the expression matrix is expected to be part
 #' of the \code{.crb} file.
+#' @param expression_matrix_BPCells Path to BPCells directory created with 
+#' \code{BPCells::write_matrix_dir()}. This is a hopefully faster alternative to h5 
+#' with a similar approach.
 #' @param welcome_message \code{string} with custom welcome message to display
 #' in the "Load data" tab. Can contain HTML formatting, e.g.
 #' \code{'<h3>Hi!</h3>'}. Defaults to \code{NULL}.
@@ -86,6 +89,7 @@ launchCerebroV1.4 <- function(
   crb_file_to_load = NULL,
   expression_matrix_mode = NULL,
   expression_matrix_h5 = NULL,
+  expression_matrix_BPCells = NULL,
   welcome_message = NULL,
   projections_default_point_size = 5,
   projections_default_point_opacity = 1.0,
