@@ -1,4 +1,4 @@
-Package: cerebroApp-lite
+Package: cerebroAppLite
 Title: Interactive visualization of single cell transcriptomics
 Version: 1.5.1
 Authors@R: c(

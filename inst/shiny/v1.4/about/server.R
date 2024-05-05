@@ -5,7 +5,7 @@
 ##
 output[["about"]] <- renderText({
   paste0(
-    '<b>Version of cerebroApp</b><br>
+    '<b>Version of cerebroAppLite</b><br>
     v1.5.1<br>
     <br>
     <b>Authors</b><br>
@@ -14,7 +14,7 @@ output[["about"]] <- renderText({
     <br>
     <b>Links</b><br>
     <ul>
-      <li><a href=https://github.com/mihem/cerebroApp-lite title="Lightweight contination of cerebroApp (Michael Heming)" target="_blank"><b> Lightweight continuation of cerebroApp. (Michael Heming)</b></a></li>
+      <li><a href=https://github.com/mihem/cerebroAppLite title="Lightweight contination of cerebroApp (Michael Heming)" target="_blank"><b> Lightweight continuation of cerebroApp. (Michael Heming)</b></a></li>
       <li><a href=https://github.com/romanhaa/Cerebro title="Discontinued Cerebro repository on GitHub (Roman Hillje)" target="_blank"><b>Discontinued Cerebro repository on GitHub (Roman Hillje)</b></a></li>
     </ul>
     <br>
