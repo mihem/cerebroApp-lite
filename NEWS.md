@@ -1,3 +1,7 @@
+
+# cerebroApp 1.5.0
+- make compatible with Seuratv5, especially with BPCells Matrix
+
 # cerebroApp 1.4.1
 - timeout function added. This logs out the user after 600 second of inactivity (can be changed in `shiny_ui.R`). The JS function was taken from https://stackoverflow.com/a/53207050/21417317.
 - add option to show up to 1000 cells in `Main`, which is useful for exports.
