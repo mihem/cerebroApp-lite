@@ -1,14 +1,14 @@
-# cerebroApp 1.5.1
+# cerebroApp-lite  1.5.1
 - remove unused functions in group
 
-# cerebroApp 1.5.0
+# cerebroApp-lite 1.5.0
 - make compatible with Seuratv5, especially with BPCells Matrix
 
-# cerebroApp 1.4.1
+# cerebroApp-lite 1.4.1
 - timeout function added. This logs out the user after 600 second of inactivity (can be changed in `shiny_ui.R`). The JS function was taken from https://stackoverflow.com/a/53207050/21417317.
 - add option to show up to 1000 cells in `Main`, which is useful for exports.
 
-# cerebroApp 1.4.0
+# cerebroApp-lite 1.4.0
 This is the first update of this cerebroApp fork. Its aim is to continue a lightweight version of the excellent cerebroApp with only the main function as the cerebroApp by Roman Hillje is sadly discontinued.
 
 ## Major changes
