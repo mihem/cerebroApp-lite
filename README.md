@@ -7,7 +7,7 @@ This is supposed to be a lightweight version that only keeps the key functions a
 The package can be installed with
 
 ```r
-remotes::install_github('mihem/cerebroApp-lite')
+remotes::install_github('mihem/cerebroAppLite')
 ```
 
 # cerebroApp

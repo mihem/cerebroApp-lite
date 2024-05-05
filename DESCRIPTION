@@ -5,7 +5,7 @@ Authors@R: c(
   person("Roman", "Hillje", email = "roman.hillje@googlemail.com", role = c("aut", "cre")),
   person("Mischko", "Heming", email = "mihem@mailbox.org", role = c("aut"))
   )
-Description: cerebroApp-lite is a Shiny application that allows to interactively visualize scRNA-seq data. Data must be exported from a Seurat object.
+Description: cerebroAppLite is a Shiny application that allows to interactively visualize scRNA-seq data. Data must be exported from a Seurat object.
 URL: 
 License: MIT + file LICENSE
 Encoding: UTF-8
