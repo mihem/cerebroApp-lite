@@ -1,6 +1,6 @@
 Package: cerebroApp-lite
 Title: Interactive visualization of single cell transcriptomics
-Version: 1.5.0
+Version: 1.5.1
 Authors@R: c(
   person("Roman", "Hillje", email = "roman.hillje@googlemail.com", role = c("aut", "cre")),
   person("Mischko", "Heming", email = "mihem@mailbox.org", role = c("aut"))

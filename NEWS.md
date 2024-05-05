@@ -1,3 +1,5 @@
+# cerebroApp 1.5.1
+- remove unused functions in group
 
 # cerebroApp 1.5.0
 - make compatible with Seuratv5, especially with BPCells Matrix
