@@ -1,3 +1,6 @@
+# cerebroAppLite 1.5.2
+ - allow plot settings (size, opacity, number of cells to show) to be different in gene expression and overview (useful for large datasets with slow gene expression)
+
 # cerebroAppLite  1.5.1
 - remove unused functions in group
 
