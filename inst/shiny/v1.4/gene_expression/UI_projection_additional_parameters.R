@@ -7,34 +7,35 @@ output[["expression_projection_additional_parameters_UI"]] <- renderUI({
       "expression_projection_plotting_order",
       label = "Plotting order",
       choices = c("Random", "Highest expression on top"),
-      selected = "Random"
+      selected = "Highest expression on top"
     ),
     sliderInput(
       "expression_projection_point_size",
       label = "Point size",
-      min = preferences[["scatter_plot_point_size"]][["min"]],
-      max = preferences[["scatter_plot_point_size"]][["max"]],
-      step = preferences[["scatter_plot_point_size"]][["step"]],
-      value = preferences[["scatter_plot_point_size"]][["default"]]
+      min = preferences[["gene_expression_plot_point_size"]][["min"]],
+      max = preferences[["gene_expression_plot_point_size"]][["max"]],
+      step = preferences[["gene_expression_plot_point_size"]][["step"]],
+      value = preferences[["gene_expression_plot_point_size"]][["default"]]
     ),
     sliderInput(
       "expression_projection_point_opacity",
       label = "Point opacity",
-      min = preferences[["scatter_plot_point_opacity"]][["min"]],
-      max = preferences[["scatter_plot_point_opacity"]][["max"]],
-      step = preferences[["scatter_plot_point_opacity"]][["step"]],
-      value = preferences[["scatter_plot_point_opacity"]][["default"]]
+      min = preferences[["gene_expression_plot_point_opacity"]][["min"]],
+      max = preferences[["gene_expression_plot_point_opacity"]][["max"]],
+      step = preferences[["gene_expression_plot_point_opacity"]][["step"]],
+      value = preferences[["gene_expression_plot_point_opacity"]][["default"]]
     ),
     sliderInput(
       "expression_projection_percentage_cells_to_show",
       label = "Show % of cells",
-      min = preferences[["scatter_plot_percentage_cells_to_show"]][["min"]],
-      max = preferences[["scatter_plot_percentage_cells_to_show"]][["max"]],
-      step = preferences[["scatter_plot_percentage_cells_to_show"]][["step"]],
-      value = preferences[["scatter_plot_percentage_cells_to_show"]][["default"]]
+      min = preferences[["gene_expression_plot_percentage_cells_to_show"]][["min"]],
+      max = preferences[["gene_expression_plot_percentage_cells_to_show"]][["max"]],
+      step = preferences[["gene_expression_plot_percentage_cells_to_show"]][["step"]],
+      value = preferences[["gene_expression_plot_percentage_cells_to_show"]][["default"]]
     )
   )
 })
+
 
 ## make sure elements are loaded even though the box is collapsed
 outputOptions(

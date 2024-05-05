@@ -6,30 +6,29 @@ output[["overview_projection_additional_parameters_UI"]] <- renderUI({
     sliderInput(
       "overview_projection_point_size",
       label = "Point size",
-      min = preferences[["scatter_plot_point_size"]][["min"]],
-      max = preferences[["scatter_plot_point_size"]][["max"]],
-      step = preferences[["scatter_plot_point_size"]][["step"]],
-      value = preferences[["scatter_plot_point_size"]][["default"]]
+      min = preferences[["overview_plot_point_size"]][["min"]],
+      max = preferences[["overview_plot_point_size"]][["max"]],
+      step = preferences[["overview_plot_point_size"]][["step"]],
+      value = preferences[["overview_plot_point_size"]][["default"]]
     ),
     sliderInput(
       "overview_projection_point_opacity",
       label = "Point opacity",
-      min = preferences[["scatter_plot_point_opacity"]][["min"]],
-      max = preferences[["scatter_plot_point_opacity"]][["max"]],
-      step = preferences[["scatter_plot_point_opacity"]][["step"]],
-      value = preferences[["scatter_plot_point_opacity"]][["default"]]
+      min = preferences[["overview_plot_point_opacity"]][["min"]],
+      max = preferences[["overview_plot_point_opacity"]][["max"]],
+      step = preferences[["overview_plot_point_opacity"]][["step"]],
+      value = preferences[["overview_plot_point_opacity"]][["default"]]
     ),
     sliderInput(
       "overview_projection_percentage_cells_to_show",
       label = "Show % of cells",
-      min = preferences[["scatter_plot_percentage_cells_to_show"]][["min"]],
-      max = preferences[["scatter_plot_percentage_cells_to_show"]][["max"]],
-      step = preferences[["scatter_plot_percentage_cells_to_show"]][["step"]],
-      value = preferences[["scatter_plot_percentage_cells_to_show"]][["default"]]
+      min = preferences[["overview_plot_percentage_cells_to_show"]][["min"]],
+      max = preferences[["overview_plot_percentage_cells_to_show"]][["max"]],
+      step = preferences[["overview_plot_percentage_cells_to_show"]][["step"]],
+      value = preferences[["overview_plot_percentage_cells_to_show"]][["default"]]
     )
   )
 })
-
 
 ## make sure elements are loaded even though the box is collapsed
 outputOptions(

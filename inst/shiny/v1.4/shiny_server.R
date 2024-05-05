@@ -14,36 +14,69 @@ server <- function(input, output, session) {
   ## Central parameters.
   ##--------------------------------------------------------------------------##
   preferences <- reactiveValues(
-    scatter_plot_point_size = list(
+    overview_plot_point_size = list(
       min = 1,
       max = 20,
       step = 1,
       default = ifelse(
         exists('Cerebro.options') &&
-        !is.null(Cerebro.options[['projections_default_point_size']]),
-        Cerebro.options[['projections_default_point_size']],
+        !is.null(Cerebro.options[['overview_default_point_size']]),
+        Cerebro.options[['overview_default_point_size']],
         2
       )
     ),
-    scatter_plot_point_opacity = list(
+    gene_expression_plot_point_size = list(
+      min = 1,
+      max = 20,
+      step = 1,
+      default = ifelse(
+        exists('Cerebro.options') &&
+        !is.null(Cerebro.options[['gene_expression_default_point_size']]),
+        Cerebro.options[['gene_expression_default_point_size']],
+        2
+      )
+    ),
+    overview_plot_point_opacity = list(
       min = 0.1,
       max = 1.0,
       step = 0.1,
       default = ifelse(
         exists('Cerebro.options') &&
-        !is.null(Cerebro.options[['projections_default_point_opacity']]),
-        Cerebro.options[['projections_default_point_opacity']],
+        !is.null(Cerebro.options[['overview_default_point_opacity']]),
+        Cerebro.options[['overview_default_point_opacity']],
         1.0
       )
     ),
-    scatter_plot_percentage_cells_to_show = list(
+    gene_expression_plot_point_opacity = list(
+      min = 0.1,
+      max = 1.0,
+      step = 0.1,
+      default = ifelse(
+        exists('Cerebro.options') &&
+        !is.null(Cerebro.options[['gene_expression_default_point_opacity']]),
+        Cerebro.options[['gene_expression_default_point_opacity']],
+        1.0
+      )
+    ),
+    overview_plot_percentage_cells_to_show = list(
       min = 10,
       max = 100,
       step = 10,
       default = ifelse(
         exists('Cerebro.options') &&
-        !is.null(Cerebro.options[['projections_default_percentage_cells_to_show']]),
-        Cerebro.options[['projections_default_percentage_cells_to_show']],
+        !is.null(Cerebro.options[['overview_default_percentage_cells_to_show']]),
+        Cerebro.options[['overview_default_percentage_cells_to_show']],
+        100
+      )
+    ),
+    gene_expression_plot_percentage_cells_to_show = list(
+      min = 10,
+      max = 100,
+      step = 10,
+      default = ifelse(
+        exists('Cerebro.options') &&
+        !is.null(Cerebro.options[['gene_expression_default_percentage_cells_to_show']]),
+        Cerebro.options[['gene_expression_default_percentage_cells_to_show']],
         100
       )
     ),
@@ -55,6 +88,7 @@ server <- function(input, output, session) {
       TRUE
     )
   )
+
 
   ## paths for storing plots
   available_storage_volumes <- c(
