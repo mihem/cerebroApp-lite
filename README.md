@@ -14,4 +14,4 @@ remotes::install_github('mihem/cerebroApp')
 
 R package that provides an interactive visualization of single cell RNA-seq data.
 [Seurat](https://github.com/satijalab/seurat) v3, v4 and v5 are supported.
-To increase speed use h5 (https://github.com/Bioconductor/HDF5Array) or [BPCells](https://github.com/bnprks/BPCells) matrix
+To increase speed use [h5] (https://github.com/Bioconductor/HDF5Array) or [BPCells](https://github.com/bnprks/BPCells) matrix.
