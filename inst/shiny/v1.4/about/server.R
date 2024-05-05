@@ -6,16 +6,16 @@
 output[["about"]] <- renderText({
   paste0(
     '<b>Version of cerebroApp</b><br>
-    v1.4.1<br>
+    v1.5.0<br>
     <br>
-    <b>Author</b><br>
+    <b>Authors</b><br>
     Roman Hillje<br>
    Michael Heming <br>
     <br>
     <b>Links</b><br>
     <ul>
+      <li><a href=https://github.com/mihem/cerebroApp-lite title="Lightweight contination of cerebroApp (Michael Heming)" target="_blank"><b> Lightweight continuation of cerebroApp. (Michael Heming)</b></a></li>
       <li><a href=https://github.com/romanhaa/Cerebro title="Discontinued Cerebro repository on GitHub (Roman Hillje)" target="_blank"><b>Discontinued Cerebro repository on GitHub (Roman Hillje)</b></a></li>
-      <li><a href=https://github.com/mihem/cerebroApp title="Fork of Cerebro App with the most recent version (Michael Heming)" target="_blank"><b>Fork of Cerebro App with the most recent version (Michael Heming)</b></a></li>
     </ul>
     <br>
     <b>Citation</b><br>
@@ -24,7 +24,7 @@ output[["about"]] <- renderText({
     Roman Hillje, Pier Giuseppe Pelicci, Lucilla Luzi, Cerebro: Interactive visualization of scRNA-seq data, Bioinformatics, btz877, <a href=https://doi.org/10.1093/bioinformatics/btz877 title="DOI" target="_blank">https://doi.org/10.1093/bioinformatics/btz877</a><br>
     <br>
     <b>License</b><br>
-    Cerebro is distributed under the terms of the <a href=https://github.com/romanhaa/Cerebro/blob/master/LICENSE.md title="MIT license" target="_blank">MIT license.</a><br>
+    cerebroApp is distributed under the terms of the <a href=https://github.com/romanhaa/Cerebro/blob/master/LICENSE.md title="MIT license" target="_blank">MIT license.</a><br>
     <br>
     <b>Credit where credit is due</b><br>
     <ul>
@@ -47,17 +47,3 @@ output[["logo_Cerebro"]] <- renderImage({
   )},
   deleteFile = FALSE
 )
-
-##
-output[["about_footer"]] <- renderText({
-  paste0(
-    '<br>
-    <div class="text-center">
-      <a target="_blank" href="https://www.twitter.com/fakechek1"><i class="fab fa-twitter" style="color: rgba(0,0,0,.44); font-size: 4rem; margin-left: 10px" aria-hidden="true"></i></a>
-      <a target="_blank" href="https://github.com/romanhaa"><i class="fab fa-github" style="color: rgba(0,0,0,.44); font-size: 4rem; margin-left: 10px" aria-hidden="true"></i></a>
-      <a target="_blank" href="https://gitlab.com/romanhaa"><i class="fab fa-gitlab" style="color: rgba(0,0,0,.44); font-size: 4rem; margin-left: 10px" aria-hidden="true"></i></a>
-      <a target="_blank" href="https://hub.docker.com/u/romanhaa"><i class="fab fa-docker" style="color: rgba(0,0,0,.44); font-size: 4rem; margin-left: 10px" aria-hidden="true"></i></a>
-      <a target="_blank" href="https://linkedin.com/in/roman.hillje"><i class="fab fa-linkedin" style="color: rgba(0,0,0,.44); font-size: 4rem; margin-left: 10px" aria-hidden="true"></i></a>
-    </div>'
-  )
-})
