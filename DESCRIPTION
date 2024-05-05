@@ -1,11 +1,11 @@
-Package: cerebroApp
-Title: Interactive visualization of scRNA-seq data with Cerebro
+Package: cerebroApp-lite
+Title: Interactive visualization of single cell transcriptomics
 Version: 1.5.0
 Authors@R: c(
   person("Roman", "Hillje", email = "roman.hillje@googlemail.com", role = c("aut", "cre")),
   person("Mischko", "Heming", email = "mihem@mailbox.org", role = c("aut"))
   )
-Description: Cerebro is a Shiny application that allows to interactively visualize scRNA-seq data. Data must be exported from a Seurat object using the helper functions which also allows to perform analysis such as pathway enrichment analysis based on marker genes of samples and/or clusters.
+Description: cerebroApp-lite is a Shiny application that allows to interactively visualize scRNA-seq data. Data must be exported from a Seurat object.
 URL: 
 License: MIT + file LICENSE
 Encoding: UTF-8
