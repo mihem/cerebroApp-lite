@@ -24,7 +24,7 @@ output[["about"]] <- renderText({
     Roman Hillje, Pier Giuseppe Pelicci, Lucilla Luzi, Cerebro: Interactive visualization of scRNA-seq data, Bioinformatics, btz877, <a href=https://doi.org/10.1093/bioinformatics/btz877 title="DOI" target="_blank">https://doi.org/10.1093/bioinformatics/btz877</a><br>
     <br>
     <b>License</b><br>
-    cerebroApp is distributed under the terms of the <a href=https://github.com/romanhaa/Cerebro/blob/master/LICENSE.md title="MIT license" target="_blank">MIT license.</a><br>
+    cerebroAppLite is distributed under the terms of the <a href=https://github.com/mihem/cerebroAppLite/blob/master/LICENSE.md title="MIT license" target="_blank">MIT license.</a><br>
     <br>
     <b>Credit where credit is due</b><br>
     <ul>
@@ -33,17 +33,3 @@ output[["about"]] <- renderText({
     <br>'
   )
 })
-
-
-##
-output[["logo_Cerebro"]] <- renderImage({
-  list(
-    src = paste0(Cerebro.options$cerebro_root, '/extdata/logo_Cerebro.png'),
-    contentType = 'image/png',
-    width = 350,
-    height = 405,
-    alt = "Cerebro logo",
-    align = "right"
-  )},
-  deleteFile = FALSE
-)
