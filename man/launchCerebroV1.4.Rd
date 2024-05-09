@@ -12,9 +12,12 @@ launchCerebroV1.4(
   expression_matrix_h5 = NULL,
   expression_matrix_BPCells = NULL,
   welcome_message = NULL,
-  projections_default_point_size = 5,
-  projections_default_point_opacity = 1,
-  projections_default_percentage_cells_to_show = 100,
+  overview_default_point_size = 5,
+  gene_expression_default_point_size = 5,
+  overview_default_point_opacity = 1,
+  gene_expression_default_point_opacity = 1,
+  overview_default_percentage_cells_to_show = 100,
+  gene_expression_default_percentage_cells_to_show = 100,
   projections_show_hover_info = TRUE,
   ...
 )
@@ -59,14 +62,24 @@ with a similar approach.}
 in the "Load data" tab. Can contain HTML formatting, e.g.
 \code{'<h3>Hi!</h3>'}. Defaults to \code{NULL}.}
 
-\item{projections_default_point_size}{Default point size in projections. This
+\item{overview_default_point_size}{Default point size in overview. This
 value can be changed in the UI; defaults to 5.}
 
-\item{projections_default_point_opacity}{Default point opacity in
-projections. This value can be changed in the UI; defaults to 1.0.}
+\item{gene_expression_default_point_size}{Default point size in gene_expression. This
+value can be changed in the UI; defaults to 5.}
 
-\item{projections_default_percentage_cells_to_show}{Default percentage of
-cells to show in projections. This value can be changed in the UI; defaults
+\item{overview_default_point_opacity}{Default point opacity in
+overview. This value can be changed in the UI; defaults to 1.0.}
+
+\item{gene_expression_default_point_opacity}{Default point opacity in
+gene expression. This value can be changed in the UI; defaults to 1.0.}
+
+\item{overview_default_percentage_cells_to_show}{Default percentage of
+cells to show in overview. This value can be changed in the UI; defaults
+to 100.}
+
+\item{gene_expression_default_percentage_cells_to_show}{Default percentage of
+cells to show in gene expression. This value can be changed in the UI; defaults
 to 100.}
 
 \item{projections_show_hover_info}{Show hover infos in projections. This}
