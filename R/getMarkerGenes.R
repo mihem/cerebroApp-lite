@@ -81,7 +81,7 @@ getMarkerGenes <- function(
   }
 
   ## check that Seurat package is at least v3.0
-  if ( utils::packageVersion('Seurat') < 3 ) {
+  if ( utils::packageVersion('Seurat') < "3" ) {
     stop(
       paste0(
         "The installed Seurat package is of version `", utils::packageVersion('Seurat'),
