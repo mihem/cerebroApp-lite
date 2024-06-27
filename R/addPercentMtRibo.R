@@ -73,7 +73,7 @@ addPercentMtRibo <- function(
   }
 
   ## check version of Seurat object and stop if it is lower than 3
-  if ( object@version < 3 ) {
+  if ( object@version < "3" ) {
     stop(
       paste0(
         "Provided Seurat object has version `", object@version, "` but must be at least 3.0."
@@ -141,7 +141,7 @@ addPercentMtRibo <- function(
   ## keep only genes that are present in data set
   ##--------------------------------------------------------------------------##
 
-  if ( object@version < 3 ) {
+  if ( object@version < "3" ) {
     ## check if `raw.data` matrix exist in provided Seurat object
     if ( ( is.null(object@raw.data) ) ) {
       stop(
@@ -253,7 +253,7 @@ addPercentMtRibo <- function(
   ## add results to Seurat object
   ##--------------------------------------------------------------------------##
 
-  if ( object@version < 3 ) {
+  if ( object@version < "3" ) {
     object <- Seurat::AddMetaData(
       object,
       data.frame(

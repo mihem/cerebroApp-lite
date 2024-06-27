@@ -68,7 +68,7 @@ calculatePercentGenes <- function(
   }
 
   ## check version of Seurat object and stop if it is lower than 3
-  if ( object@version < 3 ) {
+  if ( object@version < "3" ) {
     stop(
       paste0(
         "Provided Seurat object has version `", object@version, "` but must be at least 3.0."
