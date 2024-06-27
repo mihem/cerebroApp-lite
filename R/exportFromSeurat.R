@@ -206,7 +206,7 @@ exportFromSeurat <- function(
   export$addExperiment('organism', organism)
 
   ## add cerebroApp version
-  export$setVersion(utils::packageVersion('cerebroApp'))
+  export$setVersion(utils::packageVersion('cerebroAppLite'))
 
   ##--------------------------------------------------------------------------##
   ## add transcript counts
