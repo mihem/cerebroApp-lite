@@ -160,8 +160,8 @@ server <- function(input, output, session) {
       } else {
         message("expression_matrix_mode is not set to 'h5' or 'BPCells', skipping loading expression matrix")
       }
+      data$expression <- expression_matrix
     }
-    data$expression <- expression_matrix
     ## log message
     message(data$print())
     ## check if 'expression' slot exists and print log message with its format
