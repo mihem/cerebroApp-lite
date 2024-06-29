@@ -136,11 +136,11 @@ launchCerebroV1.4 <- function(
     )
   }
   if (
-    projections_default_percentage_cells_to_show < 0 ||
-    projections_default_percentage_cells_to_show > 100
+    gene_expression_default_percentage_cells_to_show < 0 ||
+    gene_expression_default_percentage_cells_to_show > 100
   ) {
     stop(
-      "'projections_default_percentage_cells_to_show' parameter must be between 0 and 100",
+      "'gene_expression_default_percentage_cells_to_show' parameter must be between 0 and 100",
       call. = FALSE
     )
   }
@@ -164,7 +164,7 @@ launchCerebroV1.4 <- function(
     "overview_default_point_size" = overview_default_point_size,
     "gene_expression_default_point_size" = 5,
     "gene_expression_default_point_opacity" = gene_expression_default_point_opacity,
-    "projections_default_percentage_cells_to_show" = projections_default_percentage_cells_to_show,
+    "gene_expression_default_percentage_cells_to_show" = gene_expression_default_percentage_cells_to_show,
     "projections_show_hover_info" = projections_show_hover_info
   )
 
