@@ -126,7 +126,7 @@ server <- function(input, output, session) {
     }
     ## assign path to example file if none of the above apply
     if (path_to_load=='') {
-      path_to_load <- system.file("extdata/v1.4/example.crb", package = "cerebroApp")
+      path_to_load <- system.file("extdata/v1.4/example.crb", package = "cerebroAppLite")
     }
     ## set reactive value to new file path
     data_to_load$path <- path_to_load
