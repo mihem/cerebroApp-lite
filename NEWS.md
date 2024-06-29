@@ -1,3 +1,6 @@
+# cerebroAppLite 1.5.3
+ - several bug fixes so that launchCerebro should work again
+
 # cerebroAppLite 1.5.2
  - allow plot settings (size, opacity, number of cells to show) to be different in gene expression and overview (useful for large datasets with slow gene expression)
 
