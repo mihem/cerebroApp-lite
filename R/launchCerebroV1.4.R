@@ -45,8 +45,6 @@
 #' @param overview_default_percentage_cells_to_show Default percentage of
 #' cells to show in overview. This value can be changed in the UI; defaults
 #' to 100.
-#' @param gene_expression_default_point_size Default point size in gene_expression. This
-#' value can be changed in the UI; defaults to 5.
 #' @param gene_expression_default_point_opacity Default point opacity in
 #' gene expression. This value can be changed in the UI; defaults to 1.0.
 #' @param gene_expression_default_percentage_cells_to_show Default percentage of
@@ -101,7 +99,6 @@ launchCerebroV1.4 <- function(
   expression_matrix_BPCells = NULL,
   welcome_message = NULL,
   overview_default_point_size = 5,
-  gene_expression_default_point_size = 5,
   gene_expression_default_point_size = 5,
   overview_default_point_opacity = 1,
   gene_expression_default_point_opacity = 1,
