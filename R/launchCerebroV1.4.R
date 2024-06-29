@@ -160,7 +160,7 @@ launchCerebroV1.4 <- function(
     "crb_file_to_load" = crb_file_to_load,
     "expression_matrix_h5" = expression_matrix_h5,
     "welcome_message" = welcome_message,
-    "cerebro_root" = system.file(package = "cerebroApp"),
+    "cerebro_root" = system.file(package = "cerebroAppLite"),
     "overview_default_point_size" = overview_default_point_size,
     "gene_expression_default_point_size" = 5,
     "gene_expression_default_point_opacity" = gene_expression_default_point_opacity,
@@ -179,14 +179,14 @@ launchCerebroV1.4 <- function(
   source(
     system.file(
       paste0("shiny/v1.4/shiny_UI.R"),
-      package = "cerebroApp"
+      package = "cerebroAppLite"
     ),
     local = TRUE
   )
   source(
     system.file(
       paste0("shiny/v1.4/shiny_server.R"),
-      package = "cerebroApp"
+      package = "cerebroAppLite"
     ),
     local = TRUE
   )
