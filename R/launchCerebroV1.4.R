@@ -164,6 +164,7 @@ launchCerebroV1.4 <- function(
     "cerebro_root" = system.file(package = "cerebroAppLite"),
     "overview_default_point_size" = overview_default_point_size,
     "overview_default_point_opacity" = overview_default_point_opacity,
+    "overview_default_percentage_cells_to_show" = overview_default_percentage_cells_to_show,
     "gene_expression_default_point_size" = gene_expression_default_point_size,
     "gene_expression_default_point_opacity" = gene_expression_default_point_opacity,
     "gene_expression_default_percentage_cells_to_show" = gene_expression_default_percentage_cells_to_show,
