@@ -13,8 +13,8 @@
 #' @param crb_file_to_load Path to \code{.crb} file to load on launch of
 #' Cerebro. Useful when using/hosting Cerebro in \code{closed} mode. Defaults to
 #' \code{NULL}.
-#' @param expression_matrix_mode  Optional: Mode of expression matrix. Can be either
-#' NULL, h5, or BPCells.
+#' @param expression_matrix_mode  Mode of expression matrix. Can be either
+#' crb, h5, or BPCells. Default is crb.
 #' @param expression_matrix_h5 Optional: Path to \code{.h5} file containing an expression
 #' matrix created with \code{HDF5Array::writeTENxMatrix()}, with genes as
 #' columns and cells as rows, contrary to the conventional format of genes as
@@ -94,7 +94,7 @@ launchCerebroV1.4 <- function(
   mode = "open",
   maxFileSize = 800,
   crb_file_to_load = NULL,
-  expression_matrix_mode = NULL,
+  expression_matrix_mode = "crb",
   expression_matrix_h5 = NULL,
   expression_matrix_BPCells = NULL,
   welcome_message = NULL,

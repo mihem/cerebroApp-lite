@@ -8,7 +8,7 @@ launchCerebroV1.4(
   mode = "open",
   maxFileSize = 800,
   crb_file_to_load = NULL,
-  expression_matrix_mode = NULL,
+  expression_matrix_mode = "crb",
   expression_matrix_h5 = NULL,
   expression_matrix_BPCells = NULL,
   welcome_message = NULL,
@@ -35,8 +35,8 @@ data set (\code{closed}, removes the "Load data" element); defaults to
 Cerebro. Useful when using/hosting Cerebro in \code{closed} mode. Defaults to
 \code{NULL}.}
 
-\item{expression_matrix_mode}{Optional: Mode of expression matrix. Can be either
-NULL, h5, or BPCells.}
+\item{expression_matrix_mode}{Mode of expression matrix. Can be either
+crb, h5, or BPCells. Default is crb.}
 
 \item{expression_matrix_h5}{Optional: Path to \code{.h5} file containing an expression
 matrix created with \code{HDF5Array::writeTENxMatrix()}, with genes as

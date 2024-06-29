@@ -157,8 +157,11 @@ server <- function(input, output, session) {
         print(glue::glue("[{Sys.time()}] Loading BPCells expression matrix from: {Cerebro.options[['expression_matrix_BPCells']]}"))
         expression_matrix <- BPCells::open_matrix_dir(Cerebro.options[["expression_matrix_BPCells"]])
         data$expression <- expression_matrix
-      } else {
-        message("expression_matrix_mode is not set to 'h5' or 'BPCells', skipping loading expression matrix")
+      } else if (
+        exists("Cerebro.options") &&
+          Cerebro.options[["expression_matrix_mode"]] == "crb"
+      ) {
+        message("expression_matrix_mode is set to 'crb', skipping loading expression matrix")
       }
     }
     ## log message
