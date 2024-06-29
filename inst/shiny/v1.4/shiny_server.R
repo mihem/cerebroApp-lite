@@ -145,16 +145,14 @@ server <- function(input, output, session) {
       data <- readRDS(dataset_to_load)
       if (
         exists("Cerebro.options") &&
-          Cerebro.options[["expression_matrix_mode"]] == "h5" &&
-          file.exists(Cerebro.options[["expression_matrix_h5"]])
+          Cerebro.options[["expression_matrix_mode"]] == "h5"
       ) {
         print(glue::glue("[{Sys.time()}] Loading h5 expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
         expression_matrix <- t(HDF5Array::TENxMatrix(Cerebro.options[["expression_matrix_h5"]], group = "expression"))
         data$expression <- expression_matrix
       } else if (
         exists("Cerebro.options") &&
-          Cerebro.options[["expression_matrix_mode"]] == "BPCells" &&
-          file.exists(Cerebro.options[["expression_matrix_BPCells"]])
+          Cerebro.options[["expression_matrix_mode"]] == "BPCells"
       ) {
         print(glue::glue("[{Sys.time()}] Loading BPCells expression matrix from: {Cerebro.options[['expression_matrix_BPCells']]}"))
         expression_matrix <- BPCells::open_matrix_dir(Cerebro.options[["expression_matrix_BPCells"]])
