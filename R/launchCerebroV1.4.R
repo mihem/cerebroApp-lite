@@ -38,6 +38,8 @@
 #' \code{'<h3>Hi!</h3>'}. Defaults to \code{NULL}.
 #' @param overview_default_point_size Default point size in overview. This
 #' value can be changed in the UI; defaults to 5.
+#' @param gene_expression_default_point_size Default point size in gene_expression. This  
+#' value can be changed in the UI; defaults to 5.
 #' @param overview_default_point_opacity Default point opacity in
 #' overview. This value can be changed in the UI; defaults to 1.0.
 #' @param overview_default_percentage_cells_to_show Default percentage of
@@ -100,6 +102,7 @@ launchCerebroV1.4 <- function(
   welcome_message = NULL,
   overview_default_point_size = 5,
   gene_expression_default_point_size = 5,
+  gene_expression_default_point_size = 5,
   overview_default_point_opacity = 1,
   gene_expression_default_point_opacity = 1,
   overview_default_percentage_cells_to_show = 100,
@@ -118,20 +121,20 @@ launchCerebroV1.4 <- function(
     )
   }
   if (
-    projections_default_point_size < 0 ||
-    projections_default_point_size > 20
+    overview_default_point_size < 0 ||
+    overview_default_point_size > 20
   ) {
     stop(
-      "'projections_default_point_size' parameter must be between 1 and 20",
+      "'overview_default_point_size' parameter must be between 1 and 20",
       call. = FALSE
     )
   }
   if (
-    projections_default_point_opacity < 0 ||
-    projections_default_point_opacity > 1
+    gene_expression_default_point_opacity < 0 ||
+    gene_expression_default_point_opacity > 1
   ) {
     stop(
-      "'projections_default_point_opacity' parameter must be between 0 and 1",
+      "'gene_expression_default_point_opacity' parameter must be between 0 and 1",
       call. = FALSE
     )
   }
@@ -151,18 +154,19 @@ launchCerebroV1.4 <- function(
     )
   }
 
-  ##--------------------------------------------------------------------------##
+  ## --------------------------------------------------------------------------##
   ## Create global variable with options that need to be available inside the
   ## Shiny app.
-  ##--------------------------------------------------------------------------##
+  ## --------------------------------------------------------------------------##
   Cerebro.options <<- list(
     "mode" = mode,
     "crb_file_to_load" = crb_file_to_load,
     "expression_matrix_h5" = expression_matrix_h5,
     "welcome_message" = welcome_message,
     "cerebro_root" = system.file(package = "cerebroApp"),
-    "projections_default_point_size" = projections_default_point_size,
-    "projections_default_point_opacity" = projections_default_point_opacity,
+    "overview_default_point_size" = overview_default_point_size,
+    "gene_expression_default_point_size" = 5,
+    "gene_expression_default_point_opacity" = gene_expression_default_point_opacity,
     "projections_default_percentage_cells_to_show" = projections_default_percentage_cells_to_show,
     "projections_show_hover_info" = projections_show_hover_info
   )
