@@ -157,12 +157,13 @@ launchCerebroV1.4 <- function(
   ## --------------------------------------------------------------------------##
   Cerebro.options <<- list(
     "mode" = mode,
-    "expression_matrix_mode" = NULL,
+    "expression_matrix_mode" = expression_matrix_mode,
     "crb_file_to_load" = crb_file_to_load,
     "expression_matrix_h5" = expression_matrix_h5,
     "welcome_message" = welcome_message,
     "cerebro_root" = system.file(package = "cerebroAppLite"),
     "overview_default_point_size" = overview_default_point_size,
+    "overview_default_point_opacity" = overview_default_point_opacity,
     "gene_expression_default_point_size" = gene_expression_default_point_size,
     "gene_expression_default_point_opacity" = gene_expression_default_point_opacity,
     "gene_expression_default_percentage_cells_to_show" = gene_expression_default_percentage_cells_to_show,
