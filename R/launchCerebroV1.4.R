@@ -160,6 +160,7 @@ launchCerebroV1.4 <- function(
     "expression_matrix_mode" = expression_matrix_mode,
     "crb_file_to_load" = crb_file_to_load,
     "expression_matrix_h5" = expression_matrix_h5,
+    "expression_matrix_BPCells" = expression_matrix_BPCells,
     "welcome_message" = welcome_message,
     "cerebro_root" = system.file(package = "cerebroAppLite"),
     "overview_default_point_size" = overview_default_point_size,
