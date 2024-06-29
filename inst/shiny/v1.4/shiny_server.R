@@ -150,6 +150,7 @@ server <- function(input, output, session) {
       ) {
         print(glue::glue("[{Sys.time()}] Loading h5 expression matrix from: {Cerebro.options[['expression_matrix_h5']]}"))
         expression_matrix <- t(HDF5Array::TENxMatrix(Cerebro.options[["expression_matrix_h5"]], group = "expression"))
+        data$expression <- expression_matrix
       } else if (
         exists("Cerebro.options") &&
           Cerebro.options[["expression_matrix_mode"]] == "BPCells" &&
@@ -157,10 +158,10 @@ server <- function(input, output, session) {
       ) {
         print(glue::glue("[{Sys.time()}] Loading BPCells expression matrix from: {Cerebro.options[['expression_matrix_BPCells']]}"))
         expression_matrix <- BPCells::open_matrix_dir(Cerebro.options[["expression_matrix_BPCells"]])
+        data$expression <- expression_matrix
       } else {
         message("expression_matrix_mode is not set to 'h5' or 'BPCells', skipping loading expression matrix")
       }
-      data$expression <- expression_matrix
     }
     ## log message
     message(data$print())
